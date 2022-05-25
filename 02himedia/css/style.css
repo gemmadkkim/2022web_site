@@ -66,4 +66,12 @@ body{font-family: 'Nanum Gothic', sans-serif;}
     margin-bottom: 10px; }
 .visualWrap .visual img{position: absolute;right: 0;}
 
-.box{background-color: red;height: 300px;}
+.secWrap{background-color: #eeeeee;height: 300px;}
+
+.secWrap .section{width: 980px;margin: 0 auto;}
+.secWrap .section li{}
+.secWrap .section li h4{font-size: 18px;color: white;}
+.secWrap .section li p{font-size: 15px; color: white;}
+
+
+
