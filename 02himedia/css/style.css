@@ -57,6 +57,8 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 }
 
 
+
+
 .visualWrap .visual{width: 980px;height: 400px;margin: 0 auto;position: relative;
     overflow: hidden;}
 .visualWrap .visual .txt{
@@ -66,12 +68,32 @@ body{font-family: 'Nanum Gothic', sans-serif;}
     margin-bottom: 10px; }
 .visualWrap .visual img{position: absolute;right: 0;}
 
-.secWrap{background-color: #eeeeee;height: 300px;}
 
-.secWrap .section{width: 980px;margin: 0 auto;}
-.secWrap .section li{}
-.secWrap .section li h4{font-size: 18px;color: white;}
-.secWrap .section li p{font-size: 15px; color: white;}
+.secWrap{background-color:#eeeeee ;margin-bottom:25px;}
+.secWrap .section{width: 980px;;margin: 0 auto;}
+.secWrap .section li{width: calc( 980px / 5 );height: 196px;float: left;
+    padding: 20px 5px;}
+.secWrap .section li img{display: block;margin: 0 auto;margin-bottom: 10px;}
+.secWrap .section li h4{font-size: 19px;letter-spacing : -7.5%; color: white;text-align: center;margin-bottom: 8px;}
+.secWrap .section li p{font-size: 14px;letter-spacing : -5.5%; color: white;text-align: center;}
+.secWrap .section .sec01{background-color: #7C99B9;}
+.secWrap .section .sec02{background-color: #4F74A1;}
+.secWrap .section .sec03{background-color: #4B8CE0;}
+.secWrap .section .sec04{background-color: #3DB5F2;}
+.secWrap .section .sec05{background-color: #95C8FF;}
+
+.subMenu_1st{width: 980px;height: 285px;margin: 0 auto;}
+.subMenu_1st ul{ margin-bottom: 20px;}
+.subMenu_1st ul li{
+    float: left; width: calc( ( 100% - 50px ) / 3 ); 
+    margin-right: 25px;}
+.subMenu_1st ul li:last-child{margin-right: 0;}    
+.subMenu_1st ul li img{width: 100%;}
+.subMenu_1st .txtbox{
+    border: 1px solid #DDDDDD;border-top: none;
+    padding: 20px 10px;}
+.subMenu_1st ul li h5{font-size: 18px;margin-bottom: 10px;}
+.subMenu_1st ul li p{font-size: 13px;}
 
 
 
