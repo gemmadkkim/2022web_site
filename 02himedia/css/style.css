@@ -14,9 +14,6 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .topmenu li:last-child:after{display: none}
 .topmenu li a{display: block;padding: 7px 10px;font-size: 12px;line-height: 12px;}
 
-#headerWrap h1{margin: 0 auto;width: 151px;margin-bottom: 16px;}
-#headerWrap h1 a{color: #333;}
-
 #headerWrap .toggle{width: 48px;height: 48px;
     border: 1px solid #dcdcdc;
     position: absolute;
@@ -29,7 +26,6 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 }
 .toggle div:first-child{top:calc( 50% - 9px )}
 .toggle div:last-child{top:calc( 50% + 7px )}
-
 
 
 .mainMenuWrap{background-color: #1D5DA4;}
@@ -95,5 +91,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .subMenu_1st ul li h5{font-size: 18px;margin-bottom: 10px;}
 .subMenu_1st ul li p{font-size: 13px;}
 
+
+/* footer */
 
 
