@@ -38,6 +38,11 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     background-size: cover;
     }
 
+.next,.prev{
+    position: absolute;top: 70%;left: 40%;cursor: pointer;
+}
+.prev{left: 38%;}
+
 .bx-wrapper {
     -moz-box-shadow: 0 0 0 #ccc;
     -webkit-box-shadow: 0 0 0 #ccc;
@@ -45,11 +50,9 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     border: 0 none;
     margin-bottom: 0;
     }
-.bx-wrapper .bx-pager{
-    bottom: 30px;
-    }
-
-
+.bx-wrapper .bx-pager.bx-default-pager a {
+    display: none;
+}
 
 
 .contents .conTitleWrap{width: 1280px;margin: 0 auto;
@@ -57,6 +60,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .contents .conTitle .ttl01{width: 1216px;height: 124px;text-align: left;
     font-size: 44px;line-height: 62px;font-weight: 700;
     color: #1e1e1e;}
+
 .contents .conTitle .ttl02{width: 592px;height: 56px;text-align: left;
     font-size: 18px;line-height: 28px;
     margin-left: 688px; letter-spacing: -0.6px;
@@ -73,6 +77,15 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .thumb .nav .navbar li h1{font-size: 21px;line-height: 32px;}
 .thumb .nav .navbar li p{font-size: 15px;line-height: 24px;}
 
+
+.secBoxWrap{width: 1280px;margin: 0 auto;
+position: relative;}
+.secBoxWrap {}
+.secBoxWrap .secBox{width: 1114px;height: 338px;
+    background-color: #ffd44a;
+    float: left;}
+.secBoxWrap .secBox p{font-size: 28px;line-height: 40;margin-bottom: 30px;}
+.secBoxWrap .secBox em{font-size: 15px;line-height: 22px;}
 
 
 
