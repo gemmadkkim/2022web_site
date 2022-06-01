@@ -137,7 +137,7 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 .news .newsCont ul li{
     display: inline-block;
-    width: calc( (100% -48px )/ 3 );
+    width: calc( (100% - 48px )/ 3 );
     line-height: 38px;
     text-align: center;
     margin-right: 24px;
