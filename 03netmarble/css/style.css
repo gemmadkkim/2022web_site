@@ -139,7 +139,8 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     width: 1280px;
     margin: 0 auto;
     margin-bottom: 50px;
-    position: relative;}
+    position: relative;
+}
 
 .news .newsCont h3{
     font-size: 44px;
@@ -164,21 +165,23 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 }
 
 .news .newsContBox {width: 1280px;margin: 0 auto;}
-.newsContBox .txtBoxWrap {width: calc(100% / 3 ); 
+.newsContBox .txtBoxWrap {
     height: 466px;
-    background-color: #fff;}
+    padding: 30px 0;
+}
+.newsContBox .txtBoxWrap .txtBox{
+    background-color: beige;
+}
 .news .newsContBox .txtBox li{
-    float: left; 
-    height: 50%;
+    float: left;
+    display: block;
+    width: calc(( 100% - 50px )/ 3 ); 
     padding: 35px 32px ;
     margin-right: 25px;
-    position: relative;
+    background-color: #fff;
+    transition:0.3s;
     }
-
-.news .newsContBox .txtBox li:last-child{margin-right: 25px}
-
-
-
+.news .newsContBox .txtBox li:last-child{margin-right: 0}
 .news .newsContBox .txtBox h4{
     font-size: 21px;
     line-height: 32px;
@@ -191,25 +194,68 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     display: block;
     color: rgba(30,30,30, 0.4);
     }
-
-
-.news .newsContBox ul li:hover{}
-.news .newsContBox ul li:last-child{margin-right: 0;}
-
-
-
-
+.news .newsContBox ul li:hover{
+    transform: translate(0,-15px);
+    box-shadow: 0 20px 40px 0 rgba(96 97 112 / 0.3);
+    
+}
 
 
 
+/* footer */
+.footer{
+    width: 100%;
+    background-color: #171717;
+    padding: 80px 0;
+}
+.footer .ftInner{
+    width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.footer .ftInner .ci img{
+    display: block;
+    margin-bottom: 20px;
+}
+.footer .ftInner .ci p{
+    font-size: 11px;line-height: 20px;
+    color: gray;
+    margin-bottom: 30px;
+}
 
 
+.footer .ftMenu{width: 1280px;}
+.footer .ftMenu ul{
+    display: block;
+    position: relative;
+}
+.footer .ftMenu .policy li{
+    float: left;
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    color: gray;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.footer .ftMenu .policy li:after{
+    content:"";display: block;
+    width: 2px;height: 10px;
+    background-color:gray;
+    position: absolute;
+    right: -10px;top: 6px;
+}
+.footer .ftMenu .policy li:last-child:after{display: none;}
 
-.footer{width: 100%;background-color: #171717;}
-.footer .ftBox img{display: block;}
-.footer .ftBox address{font-size: 11px;line-height: 20px;
-color: rgba(255 255 255 0.5);}
-.footer .ftMenu{}
-.footer .ftMenu ul{}
-.footer .ftMenu ul li{font-size: 12px;line-height: 20px;
-    color: rgba(255 255 255 0.7);}
+
+.footer .ftInner .ftMenu .sns{
+    position: absolute;right: 0;
+}
+.footer .ftInner .ftMenu .sns li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer .ftInner .ftMenu .sns li:hover{cursor: pointer;}
