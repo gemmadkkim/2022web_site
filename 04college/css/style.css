@@ -1,0 +1,45 @@
+.headerTopWrap{
+    background-color: #8c0f1a;
+}
+.headerTop{
+    width: 1200px;
+    margin: 0 auto;
+}
+.headerTop .navbarClgMenu{
+    width: 380px;
+    height: 40px;
+}
+.headerTop .navbarClgMenu li{
+    width: calc((100% - 4px) / 3);
+    background-color: #6b0213 ;
+    float: left;
+    margin-right: 2px;
+}
+.headerTop .navbarClgMenu li:last-child{
+    margin-right: 0;}
+.headerTop .navbarClgMenu li a{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+.headerTop .navbarUtil{
+    float: right;
+    width: 500px;
+}
+.headerTop .navbarUtil li{
+    float: left;
+    color: white;
+    margin:0 auto;
+}
+.headerTop .navbarUtil li a{    
+    display: block;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    background-color: red;
+}
