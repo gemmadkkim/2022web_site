@@ -1,9 +1,11 @@
+
 .headerTopWrap{
     background-color: #8c0f1a;
 }
 .headerTop{
     width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 .headerTop .navbarClgMenu{
     width: 380px;
@@ -27,13 +29,15 @@
 }
 
 .headerTop .navbarUtil{
-    float: right;
-    width: 500px;
+    position: absolute;
+    display: block;
+    top: 0;right: 0;
 }
 .headerTop .navbarUtil li{
     float: left;
+    display: block;
     color: white;
-    margin:0 auto;
+    margin-left: 20px;
 }
 .headerTop .navbarUtil li a{    
     display: block;
@@ -41,5 +45,36 @@
     color: white;
     text-align: center;
     line-height: 40px;
-    background-color: red;
 }
+
+.headerMenu{
+    width: 1200px;height: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+.headerMenu .ai{float: left;}
+.headerMenu .ai img{
+    width: 350px;
+    height: 150px;
+    object-fit: contain;
+}
+.headerMenu .mainMenu{
+    width: calc(1200px * 2 / 3);
+}
+.headerMenu .mainMenu ul{
+    position: absolute;
+    top: 40px;right: 0;
+}
+.headerMenu .mainMenu ul li{
+    float: left;
+    margin-left: 30px;
+}
+.headerMenu .mainMenu ul li:last-child{
+    margin-left: 0;
+}
+.headerMenu .mainMenu ul li a{
+    display: block;
+    font-size: 18px;
+    line-height: 50px;
+}
+
