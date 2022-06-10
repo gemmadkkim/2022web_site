@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>경희대학교</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
@@ -17,42 +17,64 @@
 
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="headerTopWrap">
-            <div class="headerTop">
-                <ul class="navbarClgMenu">
-                    <li><a href="#">대학교</a></li>
-                    <li><a href="#">입학안내</a></li>
-                    <li><a href="#">대학원</a></li>
-                </ul>
-                <ul class="navbarUtil">
-                    <li><a href="#">글자크기</a></li>
-                    <li><a href="#">-</a></li>
-                    <li><a href="#">+</a></li>
-                    <li><a href="#">찾아오시는길</a></li>
-                    <li><a href="#">ENGLISH</a></li>
-                    <li><a href="#">사이트맵</a></li>
-                </ul>
+            <div class="headerTop container clearfix">
+                <nav class="clgWrap">
+                    <ul class="clearfix">
+                        <li class="active"><a href="#">대학교</a></li>
+                        <li><a href="#">입학안내</a></li>
+                        <li><a href="#">대학원</a></li>
+                    </ul>
+                </nav>
+                <nav class="utilWrap">
+                    <ul class="clearfix">
+                        <li><a href="#">글자크기</a></li>
+                        <li><a href="#">-</a><a href="#">+</a></li>
+                        <li><a href="#">찾아오시는길</a></li>
+                        <li><a href="#">ENGLISH</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </nav>
             </div>        
         </div>
         <div class="headerMenu">
             <div class="ai">
                 <img src="images/khu_ai.png" alt="">
             </div>
-            <div class="mainMenu">
-                <ul>
-                    <li><a href="#">대학소개</a></li>
-                    <li><a href="#">학과소개</a></li>
-                    <li><a href="#">학사안내</a></li>
-                    <li><a href="#">대학생활</a></li>
-                    <li><a href="#">학생지원센터</a></li>
-                    <li><img src="images/toggle.jpg" alt=""></li>
-                    <li><img src="images/hm_icon.jpg" alt=""></li>
-                </ul>
+            <div class="mainMenuWrap">
+                <div class="mainMenu">
+                    <ul class="clearfix">
+                        <li><a href="#">대학소개</a></li>
+                        <li><a href="#">학과소개</a></li>
+                        <li><a href="#">학사안내</a></li>
+                        <li><a href="#">대학생활</a></li>
+                        <li><a href="#">학생지원센터</a></li>
+                        <li><img src="images/toggle.jpg" alt=""></li>
+                        <li><img src="images/hm_icon.jpg" alt=""></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
-
+    <section id="section">
+        <div class="sec1st container">
+            111
+        </div>
+        <div class="sec2nd container">
+            <!-- ul.clerfix>li*8>{8} -->
+            <ul class="learfix"> 
+                <li>1 slide</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8 slide</li>
+            </ul>
+        </div>
+    </section>
     
 </body>
 </html>
