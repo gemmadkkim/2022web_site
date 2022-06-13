@@ -14,6 +14,12 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
 
+    <script>
+        $(document).ready(function(){
+          $(".slide").bxSlider();
+        });
+    </script>
+
 
 </head>
 <body>
@@ -57,14 +63,55 @@
             </div>
         </div>
     </header>
-    <section id="section">
+    <section id="section" class="clearfix">
         <div class="sec1st container">
-            111
+            <h1>
+                <p class="pLight">21세기를 이끌어갈 ‘대학다운 미래대학’</p> 
+                <p> 경희대학교</p>
+            </h1>
+            <div class="secIcon">
+                <ul class="iconbox">
+                    <li>
+                        <img src="images/icon_con01.png" alt="">
+                        <a href="#">입학절차안내</a>
+                    </li>
+                    <li>
+                        <img src="images/icon_con02.png" alt="">
+                        <a href="#">입학설명회</a>
+                    </li>
+                    <li>
+                        <img src="images/icon_con03.png" alt="">
+                        <a href="#">장학제도</a>
+                    </li>
+                    <li>
+                        <img src="images/icon_con04.png" alt="">
+                        <a href="#">증명서발급</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="sec2nd container">
             <!-- ul.clerfix>li*8>{8} -->
-            <ul class="learfix"> 
-                <li>1 slide</li>
+            <ul class="clearfix"> 
+                <li>
+                    <div class="slideWrap">
+                        <ul class="slide">
+                            <li>
+                                <img src="images/sec_slider01.png" alt="">
+                                <a href="">산학협력단, '경희 테크&비즈 페어' 개최</a>
+                            </li>
+                            <li>
+                                <img src="images/sec_slider02.png" alt="">
+                                <a href="">KHYSS는 세계적 학자로의 성장 관문</a>
+                            </li>
+                            <li>
+                                <img src="images/sec_slider03.png" alt="">
+                                <a href="">TV속 물결 '무아레 무늬' 새로운 발광 현상 최초 발견</a>
+                            </li>
+                        </ul>
+                    </div>
+                 </li>
+
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
