@@ -374,6 +374,7 @@
     display: block;
     position: absolute;
     left: 0;bottom: 0;
+    transition:0.3s;
 }
 #section .sec2nd>ul>li:nth-child(6) .tour .bar a{
     display: block;
@@ -418,4 +419,84 @@
 }
 
 
+/* slide */
 #section .sec2nd>ul>li:nth-child(8){width: 900px;}
+
+#section .sec2nd>ul>li:nth-child(8) .swiper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#section .swiper-pagination{
+    width: 100px !important;
+    height: 40px;
+    right: 0;
+    top: 0;
+    bottom: initial;
+    left:initial;
+}
+
+#section .sec2nd>ul>li:nth-child(8) .swiper .swiper-wrapper .swiper-slide h3{
+    font-size: 30px;
+    color: white;
+}
+
+/* footer */
+
+.footer{
+    height: 150px;   
+    background-color: rgba(0,0,0, 0.7)}
+
+.footMenu{
+    margin:0 auto; 
+    width: 1200px;
+}
+.ftMTop{height: 50px;}
+.footMenu .ftMTop ul{
+    display: flex;justify-content: space-between;align-items: center;
+}
+.footMenu .ftMTop ul li a{
+    font-size: 15px;
+    line-height: 50px;
+    color:gray
+}
+.footMenu .ftMTop ul li{position: relative;}
+.footMenu .ftMTop ul li:after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: gray;
+    position: absolute;
+    right: -80px;
+    top: 20px;
+}
+.footMenu .ftMTop ul li:last-child:after{
+    display: none;;
+}
+.footer .footMenu .ftWrap .adWrap{
+    width: 950px;
+    height:100px;
+    float: right;
+}
+.footer .footMenu .ftWrap img{
+    float: left;
+}
+.footer .footMenu .ftWrap address{
+    font-size: 13px;
+    color:white;
+    font-style: normal;
+}
+.footer .footMenu .ftWrap .adWrap{
+
+}
+.footer .footMenu .ftWrap .adWrap address a{
+    font-size: 12px;
+    color:gray;
+    margin-bottom: 10px;
+}
+.footer .footMenu .ftWrap p{    
+    display: block;
+    font-size: 14px;
+    color:gray;
+}
