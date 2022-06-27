@@ -151,7 +151,9 @@ html,body{height: 100%;}
     left: 0;bottom: 0;
     transition:0.3s
 }
-.visual01 .sec01 .sec01_02 .tour01 a:hover{
+.visual01 .sec01 .sec01_02 .tour01 a:hover,
+.visual01 .sec01 .sec01_02 .tour02 a:hover
+{
     background-color: #5E2BB8;
 }
 
@@ -159,11 +161,6 @@ html,body{height: 100%;}
     position: relative;
     background-image: url(../images/banner11.jpg);
 }
-
-.visual01 .sec01 .sec01_02 .tour02 a:hover{
-    background-color: #5E2BB8;
-}
-
 
 
 .visual01 .sec02{
