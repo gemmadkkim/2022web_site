@@ -77,7 +77,6 @@ html,body{height: 100%;}
 .hdWrap .navbar ul .enter{
     float: right;
     display: flex;
-
 }
 .hdWrap .navbar ul .enter a{
     display: block;
@@ -120,17 +119,61 @@ html,body{height: 100%;}
 }
 
 
-.visual01 .sec01_02{
+.visual01 .sec01 .sec01_02{
     height: 240px;
-    background-color: pink;
-
+    display: flex;
 }
+
+.visual01 .sec01 .sec01_02 .tour01,
+.visual01 .sec01 .sec01_02 .tour02{
+    width: 230px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.visual01 .sec01 .sec01_02 .tour01{
+    position: relative;
+    margin-right: 20px;
+    background-image: url(../images/banner01.jpg);
+}
+.visual01 .sec01 .sec01_02 .tour01 a,
+.visual01 .sec01 .sec01_02 .tour02 a{
+    display: block;
+    width: 230px;
+    height: 50px;
+    background-color: #ccc;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    left: 0;bottom: 0;
+    transition:0.3s
+}
+.visual01 .sec01 .sec01_02 .tour01 a:hover{
+    background-color: #5E2BB8;
+}
+
+.visual01 .sec01 .sec01_02 .tour02{
+    position: relative;
+    background-image: url(../images/banner11.jpg);
+}
+
+.visual01 .sec01 .sec01_02 .tour02 a:hover{
+    background-color: #5E2BB8;
+}
+
+
 
 .visual01 .sec02{
     width: 480px;
     height: 560px;
     background-color: #ccc;
     float: right;
+    background-image: url(../images/cont_bg02_2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 .visual01 .sec02 .txtbox{
@@ -141,28 +184,33 @@ html,body{height: 100%;}
 .visual01 .sec02 .txtbox h1{
     font-size: 43px;
     position: relative;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .visual01 .sec02 .txtbox h1:after{
     content:"";
     display: block;
-    width: 55px;
+    width: 45px;
     height: 4px;
     background-color: #5E2BB8;
     position: absolute;
-    right:5px;
+    right:10px;
 }
 .visual01 .sec02 .txtbox h2{
     font-size: 25px;
+    line-height: 40px;
     position: relative;
+    color: #fff;
 }
 .visual01 .sec02 .txtbox h2 a{
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     font-size: 14px;
     text-align: center;
+    line-height: 30px;
     color: white;
     background-color: #5E2BB8;
     position: absolute;
