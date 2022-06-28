@@ -326,11 +326,11 @@ html,body{height: 100%;}
 .visual03 .v03cont03 .txtbox,
 .visual03 .v03cont04 .txtbox{
     width: 100%;
-    height: 80px;
+    height: 90px;
     background-color: #ddd;
     position: absolute;
     bottom: 0;
-    padding: 5px 10px;
+    padding: 10px 15px;
     transition:0.3s
 }
 .visual03 .v03cont01 .txtbox p,
@@ -349,6 +349,7 @@ html,body{height: 100%;}
     background-color: #ddd;
     opacity:0.5;
 }
+
 
 .visual03 .v03cont01 .txtbox:hover p,
 .visual03 .v03cont02 .txtbox:hover p,
@@ -369,12 +370,13 @@ html,body{height: 100%;}
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border:2px solid #fff;
+    border:2px solid #06D0DA;
     position: absolute;
     top: 50%;left: 50%;
     transform:translate(-50%,-50%);
-    opacity:0
+    opacity:0;
 }
+
 
 
 .visual03 .v03cont01 span:before,
@@ -383,7 +385,7 @@ html,body{height: 100%;}
 .visual03 .v03cont04 span:before{
     content:"";
     width: 2px;height: 10px;
-    background-color: #fff;
+    background-color: #06D0DA;
     border-radius: 1px;
     position: absolute;
     top: 50%;left: 50%;
@@ -396,7 +398,7 @@ html,body{height: 100%;}
 .visual03 .v03cont04 span:after{
     content:"";
     width: 10px;height: 2px;
-    background-color: #fff;
+    background-color: #06D0DA;
     border-radius: 1px;
     position: absolute;
     top: 50%;left: 50%;
@@ -407,7 +409,20 @@ html,body{height: 100%;}
 .visual03 .v03cont02 .txtbox:hover span,
 .visual03 .v03cont03 .txtbox:hover span,
 .visual03 .v03cont04 .txtbox:hover span{
+    opacity:1 ;
+}
+.visual03 .v03cont01 .txtbox:hover span:after,
+.visual03 .v03cont02 .txtbox:hover span:after,
+.visual03 .v03cont03 .txtbox:hover span:after,
+.visual03 .v03cont04 .txtbox:hover span:after{
     opacity:1;
+
+}
+.visual03 .v03cont01 .txtbox:hover span:before,
+.visual03 .v03cont02 .txtbox:hover span:before,
+.visual03 .v03cont03 .txtbox:hover span:before,
+.visual03 .v03cont04 .txtbox:hover span:before{
+    opacity:1;
+
 }
 
-06D0DA
