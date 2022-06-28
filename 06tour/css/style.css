@@ -98,8 +98,10 @@ html,body{height: 100%;}
     background-size: cover;
 } */
 
-
-.visualWrap{width: 980px;margin: 0 auto;padding: 50px 0;}
+.visualWrap{width: 100%;background-color: #D0F0FB;}
+.visual{
+    width: 980px;margin: 0 auto;padding: 50px 0;
+}
 .visual01{
     position: relative;
     width: 100%;  
