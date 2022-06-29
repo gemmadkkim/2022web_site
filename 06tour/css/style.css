@@ -6,6 +6,7 @@ html,body{height: 100%;}
     width: 100%;
     height: 150px;
     border-bottom:1px solid #000;
+    z-index: 10;
 }
 .hdWrap .hdTopWrap{
     border-bottom:1px solid #ddd;
@@ -101,6 +102,8 @@ html,body{height: 100%;}
 .visualWrap{
     width: 100%;
     _background-color: #CDF0EA;
+    z-index: 10;
+    border-bottom:1px solid #ddd
 }
 .visual{
     width: 980px;margin: 0 auto;padding: 50px 0;
@@ -176,6 +179,23 @@ html,body{height: 100%;}
     background-image: url(../images/cont_bg02_2.png);
     background-repeat: no-repeat;
     background-size:cover;
+    position: relative;
+    
+}
+.visual01 .sec02 i{
+    color:#fff;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) rotate(-90deg);
+    animation:fish 7s infinite alternate;
+    z-index: 11;
+}
+@keyframes fish{
+    0%{transform:translate(150px,300px);opacity: 0;}
+    50%{transform:translate(100px,-50px)}
+    100%{transform:translate(200px,-300px)}
 }
 
 .visual01 .sec02 .txtbox{
@@ -337,6 +357,7 @@ html,body{height: 100%;}
     text-align: center;
     line-height: 30px;
     color: #5E2BB8;
+    text-shadow: 2px 2px 5px #fff;
     border-radius: 15px;
     border:2px solid #5E2BB8;
     position: absolute;
@@ -361,11 +382,11 @@ html,body{height: 100%;}
 
 
 /* footer */
-.footer{width: 100%; }
+.footer{width: 100%;    padding:15px 0; }
 .footer .ftWrap{
     margin: 0 auto;
-    padding:10px 0;
     width: 980px;height: 100px;
+    z-index: 10;
 }
 .footer .ftWrap .ftTop{
     margin-bottom: 10px;
@@ -378,18 +399,24 @@ html,body{height: 100%;}
     color: #bbb;
 }
 .footer .ftWrap .ftAdd{
-    font-size: 14px;
-    color: rgb(117, 117, 117);
+    font-size: 13px;
+    color: #ccc;
+    line-height: 20px;
 }
+.footer .ftWrap .ftAdd span{font-size: 12px;}
 
 .balloon img{
     position: absolute;
     top: 50%;
     left: 50%;
     animation:bal 10s infinite alternate;
-    z-index: 0;
+    z-index: 1;
 }
 @keyframes bal{
-    from{transform:translate(-1000px,1000px);}
-    to{transform:translate(1500px,-1500px);}
+    0%{transform:translate(-1000px,1000px);}
+    20%{transform:translate(-200px,500px);}
+    40%{transform:translate(300px,0px);}
+    60%{transform:translate(800px,-500px);}
+    80%{transform:translate(1200px,-1000px);}
+    100%{transform:translate(1500px,-1500px);}
 }
