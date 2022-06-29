@@ -99,7 +99,8 @@ html,body{height: 100%;}
 } */
 
 .visualWrap{
-    width: 100%;background-color: #CDF0EA;
+    width: 100%;
+    _background-color: #CDF0EA;
 }
 .visual{
     width: 980px;margin: 0 auto;padding: 50px 0;
@@ -252,7 +253,7 @@ html,body{height: 100%;}
     text-align: center;
     line-height: 30px;
     font-size: 15px;
-    background-color: #ccc;
+    background-color: rgba(250,250,250,0.5);
     color:#5E2BB8;
     transition:0.3s;
 }
@@ -292,137 +293,103 @@ html,body{height: 100%;}
 
 
 .visual03{width: 980px;height: 240px;display: flex;}
-.visual03 .v03cont01,
-.visual03 .v03cont02,
-.visual03 .v03cont03,
-.visual03 .v03cont04{
+.visual03>div{
     width: 230px;height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 20px;
     color:#5E2BB8;
     position: relative;
-
 }
 
 .visual03 .v03cont01{
     background-image: url(../images/banner02.jpg);
-
 }
 .visual03 .v03cont02{
     background-image: url(../images/banner03.jpg);
-
 }
 .visual03 .v03cont03{
     background-image: url(../images/hotel.jpg);
-
 }
 .visual03 .v03cont04{    
     background-image: url(../images/banner05.jpg);
     margin-right: 0;
 }
-.visual03 .v03cont01 .txtbox,
-.visual03 .v03cont02 .txtbox,
-.visual03 .v03cont03 .txtbox,
-.visual03 .v03cont04 .txtbox{
+.visual03>div .txtbox{
     width: 100%;
     height: 90px;
-    background-color: #ddd;
+    background-color: rgba(250,250,250,0.5);
     position: absolute;
     bottom: 0;
     padding: 10px 15px;
     transition:0.3s
 }
-.visual03 .v03cont01 .txtbox p,
-.visual03 .v03cont02 .txtbox p,
-.visual03 .v03cont03 .txtbox p,
-.visual03 .v03cont04 .txtbox p{
+.visual03>div p{
     font-size: 14px;
     margin-top: 5px;
 }
-
-.visual03 .v03cont01 .txtbox:hover,
-.visual03 .v03cont02 .txtbox:hover,
-.visual03 .v03cont03 .txtbox:hover,
-.visual03 .v03cont04 .txtbox:hover{
-    width: 230px;height: 240px;
-    background-color: #ddd;
-    opacity:0.5;
-}
-
-
-.visual03 .v03cont01 .txtbox:hover p,
-.visual03 .v03cont02 .txtbox:hover p,
-.visual03 .v03cont03 .txtbox:hover p,
-.visual03 .v03cont04 .txtbox:hover p{
-    opacity:0
-}
-.visual03 .v03cont01 .txtbox:hover h3,
-.visual03 .v03cont02 .txtbox:hover h3,
-.visual03 .v03cont03 .txtbox:hover h3,
-.visual03 .v03cont04 .txtbox:hover h3{
-    opacity:0
-}
-.visual03 .v03cont01 span,
-.visual03 .v03cont02 span,
-.visual03 .v03cont03 span,
-.visual03 .v03cont04 span{
-    width: 30px;
+.visual03>div a{
+    display: block;
+    width: 60px;
     height: 30px;
-    border-radius: 50%;
-    border:2px solid #06D0DA;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    color: #5E2BB8;
+    border-radius: 15px;
+    border:2px solid #5E2BB8;
     position: absolute;
     top: 50%;left: 50%;
     transform:translate(-50%,-50%);
     opacity:0;
+    transition:1s;
 }
-
-
-
-.visual03 .v03cont01 span:before,
-.visual03 .v03cont02 span:before,
-.visual03 .v03cont03 span:before,
-.visual03 .v03cont04 span:before{
-    content:"";
-    width: 2px;height: 10px;
-    background-color: #06D0DA;
-    border-radius: 1px;
-    position: absolute;
-    top: 50%;left: 50%;
-    transform:translate(-50%,-50%);
+.visual03>div:hover{
+    width: 230px;height: 240px;
+}
+.visual03>div:hover p{
     opacity:0
 }
-.visual03 .v03cont01 span:after,
-.visual03 .v03cont02 span:after,
-.visual03 .v03cont03 span:after,
-.visual03 .v03cont04 span:after{
-    content:"";
-    width: 10px;height: 2px;
-    background-color: #06D0DA;
-    border-radius: 1px;
-    position: absolute;
-    top: 50%;left: 50%;
-    transform:translate(-50%,-50%);
+.visual03>div:hover h3{
     opacity:0
 }
-.visual03 .v03cont01 .txtbox:hover span,
-.visual03 .v03cont02 .txtbox:hover span,
-.visual03 .v03cont03 .txtbox:hover span,
-.visual03 .v03cont04 .txtbox:hover span{
-    opacity:1 ;
+.visual03>div:hover .txtbox{
+    width: 230px;height: 240px;
 }
-.visual03 .v03cont01 .txtbox:hover span:after,
-.visual03 .v03cont02 .txtbox:hover span:after,
-.visual03 .v03cont03 .txtbox:hover span:after,
-.visual03 .v03cont04 .txtbox:hover span:after{
-    opacity:1;
+.visual03>div:hover a{opacity:1;}
 
+
+/* footer */
+.footer{width: 100%; }
+.footer .ftWrap{
+    margin: 0 auto;
+    padding:10px 0;
+    width: 980px;height: 100px;
 }
-.visual03 .v03cont01 .txtbox:hover span:before,
-.visual03 .v03cont02 .txtbox:hover span:before,
-.visual03 .v03cont03 .txtbox:hover span:before,
-.visual03 .v03cont04 .txtbox:hover span:before{
-    opacity:1;
-
+.footer .ftWrap .ftTop{
+    margin-bottom: 10px;
+}
+.footer .ftWrap .ftTop ul{
+    display: flex;justify-content: space-between;align-items: center;
+}
+.footer .ftWrap .ftTop ul li a{
+    font-size: 13px;
+    color: #bbb;
+}
+.footer .ftWrap .ftAdd{
+    font-size: 14px;
+    color: rgb(117, 117, 117);
 }
 
+.balloon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation:bal 10s infinite alternate;
+    z-index: 0;
+}
+@keyframes bal{
+    from{transform:translate(-1000px,1000px);}
+    to{transform:translate(1500px,-1500px);}
+}
