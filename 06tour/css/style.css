@@ -119,12 +119,112 @@ html,body{height: 100%;}
     float: left;
 }
 
-
 .visual01 .sec01_01{ 
     height: 300px;
-    background-color: beige;
     margin-bottom: 20px ;
+    position: relative;
+
 }
+.visual01 .sec01_01 .sec01slideWrap{
+    width: 350px;
+    height: 300px;
+    float: right;   
+}
+
+.visual01 .sec01_01 ul li{
+    padding: 15px 0;
+    border: 0 none ;
+}
+
+/* //////// */
+.sec01slide fieldset{border:0 none;}
+.sec01slide .blind{display: block;
+    position: absolute;left: 0;top: -9999px;
+}
+.sec01slide form{width: 310px;margin: 0 auto;}
+.sec01slide .field{
+    font-size: 14px;
+    color: #aaa;
+}
+
+.field label{display: block;padding: 5px 0;}
+.field select{
+    width: 100%;height: 40px;font-size: 14px;
+    padding: 0 16px;
+    border-radius: 3px;
+}
+.field select:focus{
+    outline: none;
+}
+.field{margin-bottom: 5px;}
+.field.date, .field.air{
+    display: flex;    justify-content: space-between;
+    position: relative;
+    margin-bottom: 5px;    
+
+}
+.field div{
+    width: calc(( 100% - 10px ) / 2 );
+}
+.field div:nth-of-type(1){margin-right: 5px;}
+.field .inp-field{
+    width: 100%;font-size: 16px;height: 40px;
+    text-align: right; padding: 0 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.field.date .inp-field:focus{outline: none;}
+button{
+    width: 310px;height: 40px;
+    background-color: #ddd;
+    color: #111;
+    border:0 none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* /////// */
+
+
+.visual01 .sec01_01 .sec01slideTap{
+    width: 130px;
+    height: 300px;
+    float: left;
+    background-color: #fff;
+    position: absolute;top: 0;left: 0;
+}
+
+.visual01 .sec01_01 .sec01slideTap a{
+    line-height: 75px;
+    display: block;
+    width: 130px;
+    height: calc( 300px / 4 );
+    font-size: 15px;
+    font-weight: bold;
+    color: #aaa;
+    text-indent: 15px;
+    background-color: #fff;
+}
+.visual01 .sec01_01 .sec01slideTap a.active{
+    background-color:#d6f5f0;
+    border-bottom: 3px solid #5E2BB8;
+}
+
+
+.visual01 .sec01_01 .sec01slideTap i{
+    font-size: 15px;
+    color: #5E2BB8;
+}
+
+.bx-wrapper {
+    -moz-box-shadow: 0 0 0px #ccc;
+    -webkit-box-shadow: 0 0 0px #ccc;
+    box-shadow: 0 0 0px #ccc;
+    border: 0 none;
+    background: #fff;
+}
+
 
 
 .visual01 .sec01 .sec01_02{
@@ -182,21 +282,30 @@ html,body{height: 100%;}
     position: relative;
     
 }
-.visual01 .sec02 i{
+.visual01 .sec02 .icons{
+    display: block;
     color:#fff;
     font-size: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%,-50%) rotate(-90deg);
-    animation:fish 7s infinite alternate;
+    transform:translate(-50%,-50%);
+    animation:fish 2s infinite alternate;
     z-index: 11;
 }
+/* .visual01 .sec02 .txtbox span{
+    animation:txt 2s infinite alternate;
+    animation-duration: 2s;
+} */
 @keyframes fish{
-    0%{transform:translate(150px,300px);opacity: 0;}
-    50%{transform:translate(100px,-50px)}
-    100%{transform:translate(200px,-300px)}
+    0%{transform:translate(140px,-100px);opacity: 0;}
+    100%{transform:translate(170px,-200px) rotate(10deg);}
 }
+/* @keyframes txt{
+    to{
+        transform:translateY(-5%);
+    }
+} */
 
 .visual01 .sec02 .txtbox{
     width: 100%;
@@ -405,18 +514,30 @@ html,body{height: 100%;}
 }
 .footer .ftWrap .ftAdd span{font-size: 12px;}
 
-.balloon img{
+.balloon01 img{
     position: absolute;
     top: 50%;
     left: 50%;
     animation:bal 10s infinite alternate;
-    z-index: 1;
+    z-index: 0;
 }
 @keyframes bal{
     0%{transform:translate(-1000px,1000px);}
-    20%{transform:translate(-200px,500px);}
-    40%{transform:translate(300px,0px);}
+    20%{transform:translate(-800px,300px);}
+    40%{transform:translate(300px,-100px);}
     60%{transform:translate(800px,-500px);}
     80%{transform:translate(1200px,-1000px);}
     100%{transform:translate(1500px,-1500px);}
+}
+.balloon02{
+    position: relative;
+
+
+}
+.balloon02 img{
+}
+.balloon02 img:last-child{
+    position: absolute;
+    top: 125px;
+    left: 30px;
 }
