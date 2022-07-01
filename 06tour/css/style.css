@@ -59,10 +59,11 @@ html,body{height: 100%; }
     display: flex;justify-content: space-between;
 }
 .hdWrap .navbar ul{
-      display: flex;justify-content: start;align-items: center;
+      display: flex;justify-content: space-between;align-items: center;
+      margin: 0 25px;
 }
 .hdWrap .navbar ul li{
-
+    margin-right: 50px;
 }
 .hdWrap .navbar ul li a{
     display: block;
@@ -80,6 +81,7 @@ html,body{height: 100%; }
 }
 .hdWrap .navbar .enter a{
     font-size: 13px;
+    margin-right: 25px;
     transition:0.3s
 }
 .hdWrap .navbar .enter a:hover{
@@ -104,7 +106,7 @@ html,body{height: 100%; }
     top: -80%;
     left:-10%;
     border-radius: 45%;
-    background: rgba(6,208,218,0.1);
+    background: rgba(65, 206, 245, 0.1);
     animation: wavebg01 10s infinite linear;
     z-index: 1;
 }
@@ -118,7 +120,7 @@ html,body{height: 100%; }
     height: 1600px;
     position: absolute;
     top: -70%;
-    left: 25%;
+    left: 15%;
     border-radius: 45%;
     background: rgba(6,208,218,0.2);
     animation: wavebg02 8s infinite linear;
@@ -378,6 +380,7 @@ button{
 .visual02 .v02Swiper{
     width: 480px;height: 240px;
     margin-right: 20px;
+    z-index: 10;
 }
 .visual02 .v02Swiper img{
     display: block;object-fit: cover;
