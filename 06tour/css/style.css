@@ -1,5 +1,5 @@
 @charset "utf-8";
-html,body{height: 100%;}
+html,body{height: 100%; }
 
 /* top */
 .hdWrap{
@@ -56,18 +56,18 @@ html,body{height: 100%;}
     width: 980px;height: 60px;margin: 0 auto;
     border-left:1px solid #ddd;
     border-right:1px solid #ddd;
-
+    display: flex;justify-content: space-between;
 }
 .hdWrap .navbar ul{
-    display: flex;justify-content: space-between;align-items: center;
+      display: flex;justify-content: start;align-items: center;
 }
-.hdWrap .navbar ul li{float: left;}
+.hdWrap .navbar ul li{
+
+}
 .hdWrap .navbar ul li a{
     display: block;
     font-size: 15px;
     text-align: center;
-    line-height: 60px;
-    margin-left: 15px;
     font-weight: bold;
 }
 .hdWrap .navbar ul li a:hover{
@@ -75,44 +75,67 @@ html,body{height: 100%;}
     font-weight: bold;
 }
 
-.hdWrap .navbar ul .enter{
-    float: right;
-    display: flex;
+.hdWrap .navbar .enter{
+    display: flex;justify-content: space-between;align-items: center;
 }
-.hdWrap .navbar ul .enter a{
-    display: block;
+.hdWrap .navbar .enter a{
     font-size: 13px;
-    margin-right: 15px;
     transition:0.3s
 }
-.hdWrap .navbar ul .enter a:hover{
+.hdWrap .navbar .enter a:hover{
     font-weight: bold;
 }
 
-/* .bgWrap{
-    width: 100%;height: 1000px;
-    overflow: hidden;
-    margin: 0 auto;
-    background-image: url(../images/bg00.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-} */
-
 .visualWrap{
     width: 100%;
-    _background-color: #CDF0EA;
-    z-index: 10;
-    border-bottom:1px solid #ddd
+    border-bottom:1px solid #ddd;
+    overflow: hidden;
+    position: relative;
 }
 .visual{
     width: 980px;margin: 0 auto;padding: 50px 0;
+    z-index: 10;
 }
+
+.visualWrap .wavebg01{
+    width: 1800px;
+    height: 1800px;
+    position: absolute;
+    top: -80%;
+    left:-10%;
+    border-radius: 45%;
+    background: rgba(6,208,218,0.1);
+    animation: wavebg01 10s infinite linear;
+    z-index: 1;
+}
+
+@keyframes wavebg01{
+    to {transform: rotate(360deg);}
+}
+
+.visualWrap .wavebg02{
+    width: 1600px;
+    height: 1600px;
+    position: absolute;
+    top: -70%;
+    left: 25%;
+    border-radius: 45%;
+    background: rgba(6,208,218,0.2);
+    animation: wavebg02 8s infinite linear;
+    animation-delay:1s;
+    z-index: 2;
+}
+
+@keyframes wavebg02{
+    to {transform: rotate(360deg);}
+}
+
 .visual01{
     position: relative;
     width: 100%;  
     height: 555px;
     margin-bottom: 20px;
+    z-index: 10;
 }
 .visual01 .sec01{
     width: 480px;
@@ -161,7 +184,6 @@ html,body{height: 100%;}
     display: flex;    justify-content: space-between;
     position: relative;
     margin-bottom: 5px;    
-
 }
 .field div{
     width: calc(( 100% - 10px ) / 2 );
@@ -207,7 +229,7 @@ button{
     background-color: #fff;
 }
 .visual01 .sec01_01 .sec01slideTap a.active{
-    background-color:#d6f5f0;
+    _background-color:#d6f5f0;
     border-bottom: 3px solid #5E2BB8;
 }
 
@@ -280,49 +302,27 @@ button{
     background-repeat: no-repeat;
     background-size:cover;
     position: relative;
+    overflow: hidden;
     
 }
-.visual01 .sec02 .icons{
-    display: block;
-    color:#fff;
-    font-size: 15px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    animation:fish 2s infinite alternate;
-    z-index: 11;
-}
-/* .visual01 .sec02 .txtbox span{
-    animation:txt 2s infinite alternate;
-    animation-duration: 2s;
-} */
-@keyframes fish{
-    0%{transform:translate(140px,-100px);opacity: 0;}
-    100%{transform:translate(170px,-200px) rotate(10deg);}
-}
-/* @keyframes txt{
-    to{
-        transform:translateY(-5%);
-    }
-} */
 
-.visual01 .sec02 .icons .circle{
-    width: 50px;
-    height: 50px;
-    border
-}
+
+
+
 
 .visual01 .sec02 .txtbox{
     width: 100%;
     height: 200px;
     padding: 35px;
+    position: relative;
+    
 }
 .visual01 .sec02 .txtbox h1{
     font-size: 43px;
     position: relative;
     color: #fff;
     margin-bottom: 20px;
+    z-index: 8;
 }
 
 .visual01 .sec02 .txtbox h1:after{
@@ -332,13 +332,16 @@ button{
     height: 4px;
     background-color: #5E2BB8;
     position: absolute;
-    right:10px;
+    right:5px;
+    animation: gobar 2s infinite alternate forwards;
+
 }
 .visual01 .sec02 .txtbox h2{
     font-size: 25px;
     line-height: 40px;
     position: relative;
     color: #fff;
+    z-index: 8;
 }
 .visual01 .sec02 .txtbox h2 a{
     display: block;
@@ -354,12 +357,63 @@ button{
     left:170px;
     top: 60% ;
 }
+.visual01 .sec02 .txtbox span{
+    display: block;
+    font-size: 38px;
+    position: absolute;top: 0;right: 0;
+    animation: go 2s infinite alternate forwards;
+}
 
-.visual02{width: 980px;height: 240px;display: flex;margin-bottom: 20px;}
-.visual02 .swiper{width: 480px;margin-right: 20px;}
+@keyframes go{
+    to{transform:translateY(-30%) scale(1.2)}
+}
+@keyframes gobar{
+    to{transform:translateY(-400%) scale(0.8)}
+}
+.visual02{
+    width: 980px;height: 240px;
+    display: flex;margin-bottom: 20px;z-index:10;
+}
+/* swiper 2개 */
+.visual02 .v02Swiper{
+    width: 480px;height: 240px;
+    margin-right: 20px;
+}
+.visual02 .v02Swiper img{
+    display: block;object-fit: cover;
+}
+.visual02 .v02Swiper .swiperWrap01{
+    width: 230px;height: 240px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.visual02 .v02Swiper .swiperWrap02{
+    width: 230px;height: 240px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.visual02 .v02Swiper p{
+    width: 230px;
+    display: block;position: absolute;top: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    line-height: 35px;
+}
+
+
+/* 오늘의 날씨 */
 .visual02 .v02Cont{
     width: 480px;
     display: flex;
+    z-index:10;
 }
 .visual02 .v02Cont .v02cont01{
     width: 230px;height: 240px;
@@ -423,11 +477,10 @@ button{
     background-size:cover;
     position: relative;
     transition:0.3s
-
 }
 
-
-.visual03{width: 980px;height: 240px;display: flex;}
+/* 여행정보 등 */
+.visual03{width: 980px;height: 240px;display: flex;z-index: 10;}
 .visual03>div{
     width: 230px;height: 100%;
     background-repeat: no-repeat;
@@ -435,6 +488,7 @@ button{
     margin-right: 20px;
     color:#5E2BB8;
     position: relative;
+    z-index:10;
 }
 
 .visual03 .v03cont01{
@@ -497,10 +551,10 @@ button{
 
 
 /* footer */
-.footer{width: 100%;    padding:15px 0; }
+.footer{width: 100%;padding:15px 0; }
 .footer .ftWrap{
     margin: 0 auto;
-    width: 980px;height: 100px;
+    width: 980px;height: 80px;
     z-index: 10;
 }
 .footer .ftWrap .ftTop{
@@ -520,30 +574,4 @@ button{
 }
 .footer .ftWrap .ftAdd span{font-size: 12px;}
 
-.balloon01 img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    animation:bal 10s infinite alternate;
-    z-index: 0;
-}
-@keyframes bal{
-    0%{transform:translate(-1000px,1000px);}
-    20%{transform:translate(-800px,300px);}
-    40%{transform:translate(300px,-100px);}
-    60%{transform:translate(800px,-500px);}
-    80%{transform:translate(1200px,-1000px);}
-    100%{transform:translate(1500px,-1500px);}
-}
-.balloon02{
-    position: relative;
 
-
-}
-.balloon02 img{
-}
-.balloon02 img:last-child{
-    position: absolute;
-    top: 125px;
-    left: 30px;
-}

@@ -12,11 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/hanatour_logo_s.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.css" integrity="sha512-LTz09eiSkjtMayQgsyCcxuA2POUuvwdJoejrNLLIj5tulySAEAFgRHXW5JO4/qW36nurH8iApZ4SMj9E2rRHtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   
     <script>
@@ -27,10 +32,6 @@
              mode:"vertical",
              touchEnabled: false
        });
-    });
-
-
-    $(document).ready(function(){
          $("#sdate,#edate").datepicker({
              dateFormat:'yy/mm/dd',
              dateFormat: 'yy/mm/dd',
@@ -83,7 +84,7 @@
                     </div>
             </div>
             </div>
-            <div class="navbar clearfix">
+            <div class="navbar" >
                 <ul>
                     <li><a href="#">해외여행</a></li>
                     <li><a href="#">제주/국내여행</a></li>
@@ -91,29 +92,23 @@
                     <li><a href="#">호텔/펜션</a></li>
                     <li><a href="#">허니문</a></li>
                     <li><a href="#">하나LIVE</a></li>
-                    <div class="enter">
-                        <a href="#">로그인</a>
-                        <a href="#">회원가입</a>
-                        <a href="#">고객센터</a>
-                </div>
                 </ul>
+                <div class="enter">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">고객센터</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <div class="balloon01">
-        <img src="images/balloon.png" alt="">
-    </div>
-    <!-- <div class="balloon02">
-        <img src="images/ball_0101.png" alt="">
-        <img src="images/ball_0102.png" alt="">
-    </div> -->
     
-    <!-- <div class="bgWrap"></div>   -->
     <div class="visualWrap">
+        <div class="wavebg01"></div>  
+        <div class="wavebg02"></div>  
         <div class="visual">
-            <div class="visual01 ">
-                <div class="sec01">
+            <div class="visual01 clearfix ">
+                <div class="sec01 claerfix">
                     <div class="sec01_01"> <!-- 예약 조회 -->
                         <div class="sec01slideWrap">
                             <ul class="sec01slide">
@@ -310,32 +305,70 @@
                         <a href="#">GO</a>
                         </h2>
                     </div>
-                    <div class="icons">
-                        <img src="images/icon_d.png" alt="">
-                        <!-- <img src="images/icon_h.png" alt=""> -->
-                        <div class="circle"></div>
-                    </div>
+                    <div class="wave01"></div>
+                    <div class="wave02"></div>
                 </div>
             </div>
             <div class="visual02 clearfix">
                 <!-- swiper 1,2  / cont 2개-->
-                <div class="swiper">
-                    <div class="swiper01"><p>다낭/호이안 5일</p></div>
-                    <div class="swiper02"><p>괌 4/5/6일</p></div>
+                <div class="v02Swiper">
+                    <div class="swiperWrap01">
+                        <!-- swiper01 -->
+                        <p>다낭/호이안 5일</p>
+                        <div class="swiper mySwiper01">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/banner01.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/banner10.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiperWrap02">
+                        <p>괌 4/5/6일</p>
+                        <div class="swiper mySwiper01">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/banner01.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/banner10.jpg" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            
+                    <script>
+                        new Swiper(".mySwiper01", {
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                        });
+                        new Swiper(".mySwiper02", {
+                            navigation: {
+                                nextEl: ".swiper-button-next",
+                                prevEl: ".swiper-button-prev",
+                            },
+                        });
+                    </script>
                 </div>
-                <div class="v02Cont">
+                <div class="v02Cont clearfix">
                     <div class="v02cont01">
                         <p>SEOUL</p>
                         <span class="present"><b>구름 비</b><br>소나기 확률 80%</span>
-                        <a href="#">지역별 날씨 더 알아보기</a>                    
+                        <a href="#">지역별 날씨 더 알아보기</a>
                     </div>
                     <div class="v02cont02">
                         <p>여행후기</p>
                         <span class="present"><b>Facebook 여행후기</b><br>김*경님 후기</span>
-                        <a href="#">여행후기 더 보기</a> 
+                        <a href="#">여행후기 더 보기</a>
                     </div>
                 </div>
-
+            
             </div>
             <div class="visual03 claerfix">
                 <!-- cont 4개 -->
