@@ -90,7 +90,6 @@ html,body{height: 100%; }
 
 .visualWrap{
     width: 100%;
-    border-bottom:1px solid #ddd;
     overflow: hidden;
     position: relative;
 }
@@ -381,6 +380,7 @@ button{
     width: 480px;height: 240px;
     margin-right: 20px;
     z-index: 10;
+
 }
 .visual02 .v02Swiper img{
     display: block;object-fit: cover;
@@ -392,15 +392,12 @@ button{
     overflow: hidden;
 }
 
-
 .visual02 .v02Swiper .swiperWrap02{
     width: 230px;height: 240px;
     float: right;
     position: relative;
     overflow: hidden;
 }
-
-
 
 .visual02 .v02Swiper p{
     width: 230px;
@@ -410,6 +407,25 @@ button{
     color: #fff;
     line-height: 35px;
 }
+.swiperWrap01{
+    position: relative;
+}
+.swiperWrap02{
+    position: relative;
+}
+.swiperBtn01{
+    position: absolute;
+    left: 0;top: 40%;
+    z-index: 20;
+    cursor: pointer;
+}
+.swiperBtn02{
+    position: absolute; 
+    left: 0;top: 40%;
+    z-index: 20;
+    cursor: pointer;
+}
+
 
 
 /* 오늘의 날씨 */
@@ -554,7 +570,9 @@ button{
 
 
 /* footer */
-.footer{width: 100%;padding:15px 0; }
+.footer{
+    width: 100%;padding:15px 0;
+    border-top:1px solid #ddd; }
 .footer .ftWrap{
     margin: 0 auto;
     width: 980px;height: 80px;

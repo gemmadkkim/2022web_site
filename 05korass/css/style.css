@@ -260,19 +260,6 @@ div .quick{
     width: 200px;height: 70px;
     object-fit: contain;
 }
-/* .swiper .nextbtn{
-    position: absolute; 
-    top: 50% ;right: 0;
-    transform: translate( 0, -50% );
-    cursor: pointer;
-}
-.swiper .prevbtn{
-    position: absolute;
-    top: 50%; left: 0;
-    transform: translate( 0, -50% );
-    cursor: pointer;   
-} */
-
 
 .bannerWrap{position: relative;}
 .bannerWrap .swiper-button-next, 
