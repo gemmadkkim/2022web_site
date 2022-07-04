@@ -59,6 +59,7 @@ html,body{height: 100%; }
 }
 .hdWrap .navbar ul{
     width: 700px;
+    height: 60px;
     display: flex;justify-content: space-between;align-items: center;
     margin: 0 25px;
 }
@@ -68,14 +69,13 @@ html,body{height: 100%; }
 
 }
 .hdWrap .navbar ul li a{
-    display: block;
-    width: 100%;
     height: 100%;
     font-size: 15px;
-    text-align: center;
     font-weight: bold;
 }
-.hdWrap .navbar ul li a:hover{
+.hdWrap .navbar ul li a:hover,
+.hdWrap .navbar ul li a.active
+{
     color: #5E2BB8;
     font-weight: bold;
 }
@@ -309,9 +309,6 @@ button{
 }
 
 
-
-
-
 .visual01 .sec02 .txtbox{
     width: 100%;
     height: 200px;
@@ -357,12 +354,14 @@ button{
     background-color: #5E2BB8;
     position: absolute;
     left:170px;
-    top: 60% ;
+    top: 60%;
 }
 .visual01 .sec02 .txtbox span{
     display: block;
     font-size: 38px;
-    position: absolute;top: 0;right: 0;
+    position: absolute;
+    top: 0;
+    left:calc( 50% + 145px );
     animation: go 2s infinite alternate forwards;
 }
 

@@ -95,26 +95,25 @@ html,body{height: 100%; }
 /* section */
 .contents{
     width: 100%;
-    margin-bottom: 20px;
 }
 .contents .conTopview{
     width: 100%;
     height: 500px;
-    background: url(../images/sub_topbg03.jpg) no-repeat center; 
-    padding: 120px 0;
+    background: url(../images/sub_topbg03.jpg) no-repeat; 
+    padding: 80px;
 }
 .contents .conTopview .txtbox{
     width: 980px;
     margin: 0 auto;
-    text-shadow: #06D0DA 2px 2px 5px;
+    text-shadow: #FFF 2px 2px 5px;
 
 }
 .contents .conTopview h1{
     font-size: 60px;
-    color:#fff;
+    color:#06D0DA;
 }
 .contents .conTopview p{
-    color: #fff;
+    color: #06D0DA;
 }
 
 .contents .container{
@@ -123,8 +122,7 @@ html,body{height: 100%; }
     margin-top: -150px;
     background: #FFF;
     padding: 20px 0 ;
-    border-top: 4px solid #06D0DA;
-    border-bottom: 4px solid #06D0DA;
+
 }
 .contents .container h2{
     width: 500px;
@@ -147,8 +145,7 @@ html,body{height: 100%; }
 /* footer */
 .footer{
     width: 100%;padding:15px 0;
-    /* border-top:1px solid #ddd;  */
-}
+    border-top:1px solid #ddd; }
 .footer .ftWrap{
     margin: 0 auto;
     width: 980px;height: 80px;
