@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+html,body{height: 100%;}
+
+.hdWrap{width: 100%;height: 80px;background: #000;}
+.header{
+    margin: 0 auto;
+    width: 1260px;
+    display: flex;justify-content: space-between;align-items: center;
+}
+.header .logo{display: block;}
+
+.menu li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255,255,255,.5);
+}
+.header .trs{}
