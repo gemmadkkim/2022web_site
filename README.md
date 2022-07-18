@@ -5,3 +5,4 @@
 4. college https://gemmadkkim.github.io/2022web_site/04college
 5. korass https://gemmadkkim.github.io/2022web_site/05korass
 6. hanatour https://gemmadkkim.github.io/2022web_site/06tour
+7. clova https://gemmadkkim.github.io/2022web_site/07company
