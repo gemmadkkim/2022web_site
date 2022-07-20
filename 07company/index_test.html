@@ -66,13 +66,40 @@
                 <div class="bar3"></div>
             </div>
         </div>
-        <div class="navbarClone"></div>
+        <div class="overlay"></div>
+        <div class="navbarClone">
+            menu
+            <div class="mMenu">
+
+            </div>
+        </div>
     </header>
     <div class="visualWrap">
         slide
     </div>
     <section style="height: 1000px;"></section>
 
-<script src="js/script.js"></script>
+<script>
+    $(".navbar>ul>li").hover(function(){
+        $(this).addClass("on");
+    },function(){
+        $(this).removeClass("on")
+    })
+
+    $(".toggle").click(function(){
+        $(".navbarClone").css("left",0);
+        $(".overlay").show();
+    })
+
+    $(".overlay").click(function(){
+        $(".navbarClone").css("left","-100%");
+        $(".overlay").hide();
+    })
+
+    $(".navbar>ul").clone().appendTo(".mMenu")
+
+
+
+</script>
 </body>
 </html>

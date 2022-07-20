@@ -56,6 +56,9 @@
 .toggle .bar1{transform:translateY(-8px)}
 .toggle .bar3{transform:translateY(8px)}
 
+.navbarClone{display: none;}
+.overlay{display: none;}
+
 
 
 
@@ -83,12 +86,28 @@
 }
 
 @media (max-width: 991px) {
-    .navbar{display: none;}
-    .navbarWrap{padding:10px 20px;}
-    .toggle{display: flex;margin-left: auto;}
 }
 
 @media (max-width: 767px) {
+    .navbar{display: none;}
+    .navbarWrap{padding:10px 20px;}
+    .toggle{display: flex;margin-left: auto;}
+    .navbarClone{
+        position: fixed;
+        width: 90%;height: 100%;
+        top: 0;left: -100%;
+        background: pink;
+        display: block;
+        transition: .5s;
+    }
+    .overlay{
+        _display: block;
+        position: fixed;
+        left: 0;top: 0;
+        width: 100%;height: 100%;
+        background: #000;
+        opacity: 0.5;
+    }
     
 }
 
