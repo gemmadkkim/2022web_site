@@ -1,21 +1,126 @@
 @charset "utf-8";
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
-
+/*********** css resposive init ***********/
+/* header */
 html,body{height: 100%;}
-
-.hdWrap{width: 100%;height: 80px;background: #000;}
+.hdWrap{width: 100%;;background: rgba(0,0,0,.8)}
 .header{
     margin: 0 auto;
     width: 1260px;height: 100%;
     display: flex;justify-content: space-between;align-items: center;
 }
-.header .logo{display: block;}
-.header .navbar{width: 800px;}
-.header .menu{display: flex;justify-content: space-between;}
+.header .logo{display: block;margin-top: 10px;}
+.header .navbar{width: 900px;height: 100%;margin-left: auto;}
+.header .menu{
+    display: flex;justify-content: space-between;
+    padding: 10px 10px 0 10px;
+}
+.menu>li{
+    width: 100%;height:60px;
+    display: flex;justify-content: center;align-items: center;
+}
+.menu>li a{
 
-.menu li a{
+    text-align: center;
     font-size: 16px;
     font-weight: bold;
-    color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,.4);
 }
-.header .trs ul{display: flex;}
+.menu>li .subWrap{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 70px;left: 0;
+    background: rgba(0,0,0,.7);
+    display: none;
+    padding: 40px 0;
+    z-index: 999;
+}
+.menu>li .subWrap>ul{
+    display: flex;
+    width: 700px;
+    margin-left: 35%;
+}
+.menu>li:nth-child(3) .subWrap>ul{
+    margin-left: 50%;
+}
+.menu>li:nth-child(5) .subWrap>ul{
+    margin-left: 60%;
+}
+
+.menu>li .submenu>li{
+    margin-left: 30px;
+}
+.menu>li .submenu a{
+    color: rgba(255,255,255,.4);
+    font-size: 14px;;
+}
+.menu>li:hover .subWrap{
+   display: block;
+}
+
+.toggle{
+    display: none;
+    width: 40px;height: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+.toggle span{
+    width: 24px;
+    height: 3px;
+    border-radius: 2px;
+    background: #fff;
+    display: flex;justify-content: center;align-items: center;
+}
+.toggle span:first-child{
+    transform: translateY(-6px);
+}
+.toggle span:last-child{
+    transform: translateY(6px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*********** css resposive  ***********/
+@media (max-width: 1399px) {
+    
+}
+
+@media (max-width: 1199px) {
+    
+}
+
+@media (max-width: 991px) {
+    
+}
+
+@media (max-width: 767px) {
+    .header .navbar{
+        display: none;
+    }
+    .headerWrap{
+        padding: 20px 10px;
+    }
+
+    .toggle{
+        display: flex;
+        margin-left: auto;
+        z-index: 99;
+    }
+
+    
+}
+
+@media (max-width: 575px) {
+    
+}
