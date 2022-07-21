@@ -3,7 +3,11 @@
 /*********** css resposive init ***********/
 /* header */
 html,body{height: 100%;}
-.hdWrap{width: 100%;;background: rgba(0,0,0,.8);padding:0 10px}
+.hdWrap{
+    width: 100%;;background: rgba(0,0,0,.8);padding:0 10px;
+    position: absolute;
+    z-index: 999;
+}
 .header{
     margin: 0 auto;
     width: 1260px;height: 100%;
@@ -83,7 +87,13 @@ html,body{height: 100%;}
     transform: translateY(8px);
 }
 
+.navbarClone{display: none;}
+.navbarClone .mMenu{display: none;}
 
+/* visual */
+.visualWrap video{
+    width: 100%;
+}
 
 
 
@@ -120,6 +130,15 @@ html,body{height: 100%;}
         display: flex;
         margin-left: auto;
     }
+    .navbarClone{
+        position: fixed;
+        width: 100%;height: 100%;
+        top: 0;left: -100%;
+        background: rgba(0,0,0,.5);
+        display: block;
+        transition: .5s;
+    }
+
 
     
 }
