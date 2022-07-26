@@ -8,6 +8,11 @@
     <link rel="shortcut icon" href="images/favicon_clova.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -20,7 +25,7 @@
             <nav class="navbar">
                 <ul class="menu">
                     <li><a href="#">기술·솔루션</a></li>
-                    <li><a href="#">제품  <i class="fa-regular fa-circle-right"></i></a>
+                    <li><a href="#">제품  ·</a>
                         <div class="subWrap">
                             <div class="submenuWrap">
                                 <div class="main_s"><a href="#">제품</a></div>
@@ -33,7 +38,7 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="#">플랫폼  <i class="fa-regular fa-circle-right"></i></a>
+                    <li><a href="#">플랫폼  ·</a>
                         <div class="subWrap">
                             <div class="submenuWrap">
                                 <div class="main_s"><a href="#">플랫폼</a></div>
@@ -47,7 +52,7 @@
                         </div>
                     </li>
                     <li><a href="#">파트너</a></li>
-                    <li><a href="#">리서치  <i class="fa-regular fa-circle-right"></i></a>
+                    <li><a href="#">리서치  ·</a>
                         <div class="subWrap">
                             <div class="submenuWrap">
                                 <div class="main_s"><a href="#">리서치</a></div>
@@ -71,17 +76,42 @@
             </div>
         </div>
     </header>
-    <!-- <div class="visual">
-        <div class="visualWrap">
-            <video autoplay controls loop muted poster="aaa" preload="bbb">
-                <source src="videos/section03.mp4" type="video/mp4">
-              </video>
+<!-- visual -->
+<div id="visual">
+    <div class="swiperWrap">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slideItem">
+                    <video autoplay loop muted  preload="auto" class="video">
+                        <source src="videos/CH_CCAImain.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide slideItem">
+                    <video autoplay loop muted  preload="auto" class="video">
+                        <source src="videos/naver_ai_now_clova_pc_1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="swiper-slide slideItem" >
+                    <img src="images/main_clock_plus.png" alt="#" >
+                </div>
+                <div class="swiper-slide slideItem">
+                    <img src="images/main_lamp.png" alt="#">
+                </div>
+                <div class="swiper-slide slideItem">
+                    <video autoplay loop muted  preload="auto"  class="video">
+                        <source src="videos/CH_voiceMain.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
-    </div> -->
+    </div>
+</div>
 
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.1/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
