@@ -55,7 +55,7 @@ var swiper = new Swiper(".clovaSwiper", {
       disableOnInteraction: false,
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiper-pagination02",
       clickable: true,
     }
 });
