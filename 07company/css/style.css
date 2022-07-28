@@ -137,7 +137,7 @@ html,body{height: 100%;}
 .swiper-pagination {
     position: absolute;
     left: 0;
-    top: calc(60% - 5px) ;
+    top: calc(60% - 15px) ;
     text-align: center;
     -webkit-transition: .3s opacity;
     -o-transition: .3s opacity;
@@ -149,7 +149,7 @@ html,body{height: 100%;}
     --swiper-theme-color: #fff !important;
     --swiper-navigation-size: 44px !important; 
     --swiper-theme-color: #fff;
-    --swiper-pagination-bullet-vertical-gap:25px;
+    --swiper-pagination-bullet-vertical-gap:30px;
     --swiper-pagination-bullet-width:40px;
     --swiper-pagination-bullet-height:3px;
 }
@@ -170,7 +170,7 @@ html,body{height: 100%;}
 .swiper-slide .txtWrap{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%,-60%);
     display: flex;justify-content: center;align-items: center;
     flex-direction: column;
@@ -211,8 +211,16 @@ html,body{height: 100%;}
     width: 100%;
     margin-top: -315px;
     position: absolute;
-    z-index: 999;
+    z-index: 99;
 }
+#section .mBoxmenutop{
+    display: none;
+    width: 630px;
+    height: 200px;
+    padding: 20px;
+}
+.mBoxmenutop h4{font-size: 42px;margin-bottom: 20px;text-align: center;}
+.mBoxmenutop p{font-size: 18px;text-align: center;}
 #section .secWrap{
     width: 1260px;
     height: 1260px;
@@ -249,19 +257,48 @@ html,body{height: 100%;}
 }
 
 /* sec02 clovaDiv swiper*/
-.clovaDiv{width: 1260px;}
-.clovaDiv .swiper-slide{
+.clovaDiv{
+    width: 1260px;
     display: flex;
 }
-.clovaDiv .divImg,
-.clovaDiv .divTxt
-{
+
+.clovaDiv .clovaBg{   /*animation 효과 */
     width: 630px;
     height: 315px;
+    background: #F1F3F6;
+    backdrop-filter: blur(10px);
+    display: flex;justify-content: center;align-items: center;
 }
-.clovaDiv .divImg{
 
+.clovaDiv .clovaBg h1{
+    font-size: 60px;
+    color: #05d685;
+    font-weight: 900;
+    display: block;
 }
+.clovaDiv .swiper{
+    width: 630px;
+    height: 315px;
+    background: #F1F3F6;
+}
+.clovaDiv .swiper .swiper-slide{
+    display: flex;justify-content: center; align-items: center;}
+.clovaDiv .swiper .divTxt{
+    width: 450px;
+}
+.clovaDiv .swiper .divTxt h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.clovaDiv .swiper .divTxt p{
+    font-size: 14px;
+}
+
+
+
+
+
+
 
 /*subsection*/
 .subsection{
@@ -271,16 +308,49 @@ html,body{height: 100%;}
 .subsection .ssWrap{
     display: flex;
 }
-.subsection .ssWrap .sebsec{width: 315px;height: 630px;}
-.subsection .ssWrap .sebsec img{
-    width: 315px;height: 315px;
+.subsection .ssWrap .subsec{
+    width: 315px;height: 630px;
+    
+}
+.subsection .ssWrap .subsec div{width: 315px;height: 315px;}
+.subsection .ssWrap .subsec .imgBox{
+    display: block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    display: flex;justify-content: center; align-items: center;
 }
-.subsection .ssWrap .sebsec .txtbox{}
-.subsection .ssWrap .sebsec .txtbox a{}
-.subsection .ssWrap .sebsec .txtbox p{}
+
+.subsection .ssWrap .subsec:nth-child(2),
+.subsection .ssWrap .subsec:nth-child(4){
+    background: #F9F9F9;
+}
+
+.subsection .ssWrap .subsec:nth-child(1){
+    background: #05d685;
+}
+.subsection .ssWrap .subsec:nth-child(3){
+    background: #2973EC;
+}
+.subsection .ssWrap .subsec .txtbox{
+    width: 315px;height: 315px;
+    display: flex;justify-content: space-around;align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+.subsection .ssWrap .subsec:nth-child(1) .txtbox,
+.subsection .ssWrap .subsec:nth-child(3) .txtbox{
+    color: white;
+}
+.subsection .ssWrap .subsec .txtbox h3{
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 40px;
+}
+.subsection .ssWrap .subsec .txtbox p{
+    width: 230px;
+    font-size: 16px;
+}
 
 
 
@@ -382,6 +452,9 @@ html,body{height: 100%;}
     .swiper-slide .video{
         height:65vh;
     }
+    .swiper-slide .txtWrap{
+        left: 50%;
+        top: 50%;}
     
     .swiper-slide .txtWrap>p>span{display: block;}
     .swiper-slide .txtWrap>p{
@@ -402,6 +475,19 @@ html,body{height: 100%;}
 
     /* section */
     #section{margin-top: 0;}
+
+    #section .mBoxmenutop{
+        display: flex;justify-content: center;align-items: center;
+        flex-direction: column;
+    }
+    .boxmenu{flex-direction: column;}
+    .boxmenu .icons{
+        width: 630px;
+        height: 200px;
+    }
+
+    .clovaDiv{display: none;}
+    .subsection{display: none;}
 
     
 
