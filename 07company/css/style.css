@@ -358,6 +358,7 @@ html,body{height: 100%;}
 #vNews{
     width: 100%;
     background: #111;
+    margin-bottom: 50px;
     
 }
 #vNews .newsWrap{
@@ -365,8 +366,7 @@ html,body{height: 100%;}
     margin: 0 auto;
     padding: 70px 20px;
 }
-#vNews .newsWrap .news{
-}
+
 #vNews .newsWrap .news .newshd{
     width: 500px;
     display:flex;justify-content: center;align-items: center;
@@ -392,39 +392,132 @@ html,body{height: 100%;}
 #vNews .newsWrap .news .newsBox li{
     width: 400px ;
     margin-right: 30px;
+    padding: 10px;
 }
 #vNews .newsWrap .news .newsBox li:last-child{
     margin-right: 0;
 }
 #vNews .newsWrap .news .newsBox li .txtTop{
     background: #fff;
-    height: 100px;
+    height: 165px;
     display: flex;justify-content: center;align-items: center;
     flex-direction: column;
     border-radius: 15px 15px 0 0;
 }
 #vNews .newsWrap .news .newsBox li .txtTop>a{
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 #vNews .newsWrap .news .newsBox li .txtTop>span{
     font-size: 20px;
 }
 #vNews .newsWrap .news .newsBox li .txtBtm{
     background: #efefef;
-    height: 200px;
-    display: flex;justify-content: center;align-items: center;
+    height: 150px;
+    display: flex;justify-content: space-between;align-items: center;
     flex-direction: column;
     border-radius: 0 0 15px 15px;
-    padding: 20px;
+    padding: 30px;
 }
 #vNews .newsWrap .news .newsBox li .txtBtm>p{
     font-size: 15px;
-}
-#vNews .newsWrap .news .newsBox li .txtBtm>p:first-child{
-    font-size: 18px;
+    height: 100px;
 }
 
+#vNews .newsWrap .news .newsBox li:nth-child(2) .txtTop>span{
+    color:#05d685;
+    font-weight: 600;
+}
 
+/* vBlog */
+#vBlog{
+    margin-bottom: 50px;
+}
+.bWrap{
+    width: 1260px;
+    height: 630px;
+    margin: 0 auto;
+    display: flex;
+}
+.bWrap .bTitle {
+    width: 315px;height: 630px;overflow: hidden;
+    position: relative;
+}
+.bWrap .bTitle p{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    position: absolute;
+    left: 20%;bottom: 10%;
+}
+.bWrap .bTitle p>span{
+    font-size: 42px;
+}
+
+.bWrap .swiper{
+    width: 945px;
+    height: 630px;
+
+}
+.bWrap .swiper .swiper-wrapper .swiper-slide{
+    width: 315px;height: 630px;
+    display: flex;justify-content: space-between;align-items: center;
+    flex-direction: column;
+}
+.bWrap .swiper .swiper-wrapper .swiper-slide .blogImg{
+    height: 210px;
+    display: flex;justify-content: center;   align-items: center;
+}
+.bWrap .swiper .swiper-wrapper .swiper-slide .blogTxt{
+    height: 420px;
+    padding: 20px;
+}
+.bWrap .swiper .swiper-wrapper .swiper-slide .blogTxt h6{
+    height: 210px;
+    font-size: 24px;
+    text-align: center;
+}
+.bWrap .swiper .swiper-wrapper .swiper-slide .blogImg img{
+    width: 100px; height: 100px;
+
+}
+
+#biz {
+    margin-bottom: 50px;
+}
+#biz .bpWrap{
+    width: 1260px;
+    height: 315px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#biz .bpWrap .bPart{
+    width:calc(1260px / 2);
+    height: 315px;
+    position: relative;
+}
+#biz .bpWrap .bPart .bpTxt{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;bottom: 10%;
+}
+#biz .bpWrap .bPart span{
+    font-size: 36px;
+    color: #fff;
+}
+#biz .bpWrap .bPart p{
+    width: 350px;
+    color: rgba(255,255,255,0.8);
+}
+#biz .bpWrap .bPart a{
+    color: rgba(255,255,255,0.8);
+}
 
 
 /*********** css resposive  ***********/
@@ -586,6 +679,7 @@ html,body{height: 100%;}
     .clovaDiv{display: none;}
     .subsection{display: none;}
     #vNews{display: none;}
+    #vBlog{display: none;}
 
 
 }

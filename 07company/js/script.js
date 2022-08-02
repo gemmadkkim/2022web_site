@@ -59,3 +59,18 @@ var swiper = new Swiper(".clovaSwiper", {
       clickable: true,
     }
 });
+
+// swiper03 blog
+var swiper = new Swiper(".blogSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 0,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  
+  pagination: {
+    el: ".swiper-pagination03",
+    clickable: true,
+  },
+});
