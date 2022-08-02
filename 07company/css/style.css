@@ -376,7 +376,7 @@ html,body{height: 100%;}
 
 }
 #vNews .newsWrap .news .newshd h5{
-    font-size: 50px;
+    font-size: 48px;
     color: white;
     margin-bottom: 20px;
 }
@@ -403,6 +403,12 @@ html,body{height: 100%;}
     flex-direction: column;
     border-radius: 15px 15px 0 0;
 }
+#vNews .newsWrap .news .newsBox li .txtTop>a{
+    font-size: 24px;
+}
+#vNews .newsWrap .news .newsBox li .txtTop>span{
+    font-size: 20px;
+}
 #vNews .newsWrap .news .newsBox li .txtBtm{
     background: #efefef;
     height: 200px;
@@ -410,6 +416,12 @@ html,body{height: 100%;}
     flex-direction: column;
     border-radius: 0 0 15px 15px;
     padding: 20px;
+}
+#vNews .newsWrap .news .newsBox li .txtBtm>p{
+    font-size: 15px;
+}
+#vNews .newsWrap .news .newsBox li .txtBtm>p:first-child{
+    font-size: 18px;
 }
 
 
