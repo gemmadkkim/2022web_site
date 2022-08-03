@@ -470,6 +470,7 @@ html,body{height: 100%;}
     width: 315px;height: 630px;
     display: flex;justify-content: space-between;align-items: center;
     flex-direction: column;
+    border: 1px solid rgb(233, 233, 233);
 }
 .bWrap .swiper .swiper-wrapper .swiper-slide .blogImg{
     height: 210px;
@@ -786,6 +787,7 @@ footer{
 
 
     #vNews{
+        width: 100%;
         margin-bottom: 0;
     }
     #vNews .newsWrap{
@@ -797,6 +799,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transform: scale(0.9);
     }
     #vNews .newsWrap .news .newshd h5{
         font-size: 38px;
