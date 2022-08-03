@@ -767,7 +767,6 @@ footer{
         height: 150px;
         align-items: center;
         padding: 20px 20px;
-     
     }
 
     .boxmenuWrap .boxmenu .icons img{
@@ -809,6 +808,10 @@ footer{
         justify-content: center;
         align-items: center;
         transform: scale(0.9);
+    }
+    #vNews .newsWrap .news .newshd{
+        width: 100%;
+        margin-bottom: 10px;
     }
     #vNews .newsWrap .news .newshd h5{
         font-size: 38px;
