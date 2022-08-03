@@ -510,6 +510,7 @@ html,body{height: 100%;}
 #biz .bpWrap .bPart span{
     font-size: 36px;
     color: #fff;
+    font-weight: 600;
 }
 #biz .bpWrap .bPart p{
     width: 350px;
@@ -518,6 +519,39 @@ html,body{height: 100%;}
 #biz .bpWrap .bPart a{
     color: rgba(255,255,255,0.8);
 }
+
+footer{
+    background: #1A1A1A;
+    height: 185px;
+}
+.ftWrap{
+    width: 1260px;
+    margin: 0 auto;
+    padding: 20px 0 ;
+}
+.ftTop{
+    display: flex;justify-content: space-between;align-items: center;
+    height: 60px;
+}
+.ftTop .snsIcons{
+    display: flex;justify-content: space-between;
+    width: 150px;
+}
+.ftWrap .ft ul{
+    display: flex;
+}
+.ftWrap .ft ul li{
+    margin-right: 10px;
+}
+.ftWrap .ft ul li a{
+    color: #8b8b8b;
+    font-size: 13px;
+}
+
+
+
+
+
 
 
 /*********** css resposive  ***********/
