@@ -746,21 +746,30 @@ footer{
     #section{margin-top: 0;}
 
     #section .mBoxmenutop{
+        width: 100%;
         display: flex;justify-content: center;align-items: center;
         flex-direction: column;
         z-index: 99;
     }
     .boxmenu{flex-direction: column;}
+    .boxmenuWrap .boxmenu .mBoxmenutop{
+        width: 100%;
+
+    }
+
+    .mBoxmenutop h4{font-size: 38px;}
+    .mBoxmenutop p{font-size: 14px;}
+
     
     .boxmenuWrap .boxmenu .icons{
         display: flex;
         width: 100%;
         height: 150px;
         align-items: center;
-        padding: 20px;
-        
-        
+        padding: 20px 20px;
+     
     }
+
     .boxmenuWrap .boxmenu .icons img{
         margin-bottom: 0;
     }
