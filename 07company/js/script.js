@@ -39,7 +39,7 @@ $(".mMenu li>a").click(function(e){
 var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     autoplay: {
-      delay: 4000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     pagination: {
