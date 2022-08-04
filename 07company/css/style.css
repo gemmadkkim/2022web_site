@@ -473,21 +473,26 @@ html,body{height: 100%;}
     border: 1px solid rgb(233, 233, 233);
 }
 .bWrap .swiper .swiper-wrapper .swiper-slide .blogImg{
-    height: 210px;
+    height: 315px;
+    width: 300px;
     display: flex;justify-content: center;   align-items: center;
+    /* border: 1px solid rgb(233, 233, 233); 
+    border-radius: 15px; */
 }
 .bWrap .swiper .swiper-wrapper .swiper-slide .blogTxt{
-    height: 420px;
-    padding: 20px;
+    height: 315px;
+    padding: 30px 20px 20px 20px;
 }
 .bWrap .swiper .swiper-wrapper .swiper-slide .blogTxt h6{
-    height: 210px;
-    font-size: 24px;
+    height: 140px;
+    font-size: 18px;
     text-align: center;
+}
+.bWrap .swiper .swiper-wrapper .swiper-slide .blogTxt p{
+    font-size: 14px;
 }
 .bWrap .swiper .swiper-wrapper .swiper-slide .blogImg img{
     width: 100px; height: 100px;
-
 }
 
 #biz {
@@ -521,7 +526,6 @@ html,body{height: 100%;}
 @keyframes circle{
     to {}
     
-
 }
 #biz .bpWrap .bPart .bpTxt{
     width: 400px;
@@ -615,6 +619,21 @@ footer{
 }
 .ftWrap .cs .pwSign img:hover{
     transform: scale(1.2);
+}
+
+
+.scr{
+    display: none;
+    width: 70px;height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #05d685 0%, #2973EC 100%);
+    display: flex;justify-content: center;align-items: center;
+    position: fixed;
+    right: 10px;bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
 }
 
 

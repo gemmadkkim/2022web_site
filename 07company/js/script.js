@@ -74,3 +74,23 @@ var swiper = new Swiper(".blogSwiper", {
     clickable: true,
   },
 });
+
+
+
+// scr Top
+
+let wrapTop = $(".header").offset().top;
+
+$(window).scroll(function(){
+    let scrollY = window.pageYOffset
+    
+    if($("body").height()/2 < scrollY){
+        $(".scr").fadeIn()
+    }else{
+        $(".scr").fadeOut()
+    }
+})
+
+$(".scr").click(function(){
+    $("html,body").animate({scrollTop:0},300)
+})
