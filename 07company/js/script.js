@@ -81,6 +81,7 @@ var swiper = new Swiper(".blogSwiper", {
 
 let wrapTop = $(".header").offset().top;
 
+
 $(window).scroll(function(){
     let scrollY = window.pageYOffset
     
