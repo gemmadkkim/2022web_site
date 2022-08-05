@@ -98,5 +98,36 @@ $(".scr").click(function(){
 
 
 
-//
+// sub tab menu
+
+let params = new URLSearchParams(location.search);
+console.log("VIEWQ"+params.get("submenu"));
+
+function tab(){
+    $(".tabmenu>li").click(function(){
+      
+        let i = $(this).index();
+        console.log(i)
+        $(".tabmenu>li").removeClass("active");
+        $(this).addClass("active");
+
+        $(".content>div").hide().eq(i).show();
+    })
+
+}
+
+function views(i){
+    if(i != null){
+      console.log("TEST")
+      $(".tabmenu>li").removeClass("active").eq(i).addClass("active");
+      $(".content>div").hide().eq(i).show();
+      tab();
+
+    }else{
+      tab();
+     
+    }
+}
+tab()
+views(params.get("submenu"));
 
