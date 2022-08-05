@@ -676,6 +676,7 @@ footer{
 .sub .content .tabCon{
     width: 100%;
     height: 100%;
+    margin-bottom: 30px;
 }
 .sub .content .tabCon .location{
     margin-top: 10px;
@@ -700,9 +701,51 @@ footer{
     line-height: 34px;
     margin-bottom: 70px;
 }
-
-
-
+.content .tabCon .plfCon .btnWrap{
+    width: 1050px;
+    height: 60px;
+    display: flex;gap:140px
+}
+.content .tabCon .plfCon .btnWrap>div{
+    width: 320px;height: 60px;
+    line-height: 60px;
+    background:#05d685;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.content .tabCon .plfCon .btnWrap>div:first-child{
+    margin-left: 150px;
+}
+.content .tabCon .plfCon .btnWrap>div>a{
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+     
+}
+.content .tabCon .plfList{
+    width: 1050px; height: 280px;
+    margin: 0 auto;
+}
+.content .tabCon .plfList .icons{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .tabCon .plfList .icons .list{
+    display: flex;justify-content: center;align-items: center;
+    flex-direction: column;
+}
+.content .tabCon .plfList .icons .list img,
+.content .tabCon .plfList .icons .list h3,
+.content .tabCon .plfList .icons .list p{
+    margin-bottom: 5px;
+}
+.content .tabCon .plfList .icons .list a{
+    color: #bbb;
+    font-weight: 600;
+}
 
 
 
