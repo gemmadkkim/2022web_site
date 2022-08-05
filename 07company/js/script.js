@@ -95,3 +95,8 @@ $(window).scroll(function(){
 $(".scr").click(function(){
     $("html,body").animate({scrollTop:0},300)
 })
+
+
+
+//
+
