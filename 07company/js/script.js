@@ -113,7 +113,6 @@ function tab(){
 
         $(".content>div").hide().eq(i).show();
     })
-
 }
 
 function views(i){
