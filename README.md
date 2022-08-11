@@ -6,3 +6,5 @@
 5. korass https://gemmadkkim.github.io/2022web_site/05korass
 6. hanatour https://gemmadkkim.github.io/2022web_site/06tour
 7. clova https://gemmadkkim.github.io/2022web_site/07company
+8. kanarys https://gemmadkkim.github.io/2022web_site/08bootstrap
+9. todolist https://gemmadkkim.github.io/2022web_site/09todolist
