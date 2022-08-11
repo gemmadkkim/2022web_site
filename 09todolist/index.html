@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+
+        .todoWrap{
+            width: 400px;height: 600px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            background: #aef0e0;
+            position: relative;
+            padding: 10px 10px;
+        }
+        
+        .todoWrap h1 {
+            color: #fff;
+            line-height: 40px;
+            text-align: center;
+            position: relative;
+            margin-top: 10px;
+        }
+        
+        .todoWrap h1:after{
+            content: "";
+            width: 150px;
+            height: 3px;
+            background: #fff;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        .inpWrap{
+            width: 350px;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            margin-left :30px;
+            display: flex;
+            gap:10px;
+
+            
+        }
+        .inpWrap input{
+            width: 300px;
+            border: none;
+            line-height: 30px;
+            border-radius: 15px;
+            text-indent: 15px;
+            font-size: 12px;
+            align-self: center;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        .inpWrap .btn{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #fff;
+            border: none;
+            box-shadow: 0 0 10px #ccc;
+            color: #bbb;
+            font-size: 20px;
+        }
+        .viewData{
+            width: 350px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .viewData li{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        .viewData li .txt{
+            width: 320px;
+            font-size: 12px;
+            text-indent: 35px;
+        }
+        .viewData li .txt.active{
+            text-decoration: line-through;
+        }
+        .iconWrap{
+            display: flex;
+        }
+        .iconWrap .doneT,
+        .iconWrap .doneF{
+            color: #76C8B9;
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform:translateY(-50%)
+        }
+        .iconWrap .del{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform:translateY(-50%)
+        }
+        .iconWrap i{
+            color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="todoWrap">
+        <h1>To to List</h1>
+        <div class="inpWrap">
+            <input type="text" class="inp">
+            <button class="btn">+</button>
+        </div>
+        <div class="viewData">
+            <li>
+                <div class="txt">오늘의 할일1</div>
+                <div class="iconWrap">
+                    <a href="#" onclick=""><i class="fa-regular fa-circle doneF"></i></a>
+                    <a href="#" onclick=""><i class="fa-solid fa-circle-check doneT"></i></a><!-- done -->
+                    <a href="#" onclick=""><i class="fa-solid fa-circle-minus del"></i></a><!-- del -->
+                </div>
+            </li>
+        </div>
+    </div>
+
+    <script>
+
+
+        listData = [];
+
+        const viewData = document.querySelector(".viewData");
+        const inp = document.querySelector(".inp");
+        const btn = document.querySelector(".btn");
+
+
+        btn.addEventListener("click",function(){
+            if(inp.value != ""){
+
+                let value = {"todo":inp.value,"done":false};
+                listData.push(value);
+                
+                let valueData = JSON.stringify(listData);
+                localStorage.setItem("todoData",valueData)
+
+                view();
+                inp.value = "";
+
+             }else{
+                alert("오늘의 할 일을 입력하세요.");
+                inp.focus();
+            }
+
+        })
+
+        view();
+
+        function view(){
+
+            if(localStorage.length > 0){
+
+                let localData = localStorage.getItem("todoData");
+                listData = JSON.parse(localData);
+            }
+            
+            
+            todoData="";
+            listData.forEach(function(item,i){
+                console.log(listData[i]["todo"]);
+    
+                    todoData += `<li>`
+
+                        if(item.done == true){
+                            todoData += `<div class="txt active" onclick="done(${i}">${listData[i].todo}</div>`
+                        }else{
+                            todoData += `<div class="txt" onclick="done(${i}">${listData[i].todo}</div>`
+                        }
+                        todoData += `<div class="iconWrap">`
+                        todoData += `    <a href="#" onclick="del(${i})"><i class="fa-solid fa-circle-minus"></i></a>`
+
+                        if(item.done == true){
+                        todoData += `    <a href="#" onclick="done(${i}"><i class="fa-solid fa-circle-check doneT"></i></a>`
+                        }else{
+                        todoData += `    <a href="#" onclick="done(${i})"><i class="fa-regular fa-circle doneF"></i></a>`
+                        }
+                        todoData += `</div>`
+                    todoData += `</li>`
+
+            })
+            
+            viewData.innerHTML = todoData;
+
+        }
+
+        function del(idx){
+            listData.splice(idx,1);
+
+            let valueData = JSON.stringify(listData);
+            localStorage.setItem("todoData",valueData);
+
+            view();
+        }
+
+        function done(idx){
+            listData[idx].done = !listData[idx].done;
+
+            let valueData = JSON.stringify(listData);
+            localStorage.setItem("todoData",valueData);
+
+            
+            view();
+        }
+        
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
