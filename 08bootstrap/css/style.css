@@ -2,27 +2,26 @@
 :root{
     --btn-color1 :  #3d7fe0;
 }
-
-
 header{
     width: 100%;
     height: 70px;
     padding: 15px 0 ;
+    border: 1px solid #ddd;
 }
 
-nav .container{
-    display: flex;
+.navbar{
     width: 1260px;
-    height: 40px;
-}
-nav .menu>a{
-    font-size: 14px;
-    transition: .3s;
-}
-nav .menu>a:hover{
-    transform:scale(.9);
+    margin: 0 auto;
+    justify-content: center;align-items: center;
 }
 
+.offcanvas-body .nav-link{
+    font-weight: bold;
+}
+.offcanvas-body .nav-item .dropdown-menu>a{
+    font-size: 12px;
+    font-weight: bold;
+}
 .visual{}
 .visualWrap{
     width: 1260px;
