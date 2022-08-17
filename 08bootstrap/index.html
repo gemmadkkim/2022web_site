@@ -12,11 +12,11 @@
 
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-light ">
-        <div class="container-fluid">
+    <header class="position-fixed">
+      <nav class="navbar py-0 navbar-expand-md navbar-light ">
+        <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="images/logo_img.png" alt="">
+            <img src="images/logo_img00.png" alt="">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar">
@@ -25,15 +25,16 @@
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <a href="./"><img src="images/logo_img00.png" alt=""></a>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body px-5">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                <a name="" id="" class="btn btn-primary btn-sm btn-lg-lg d-block d-md-none mb-5" href="#" role="button"><span>Client Login</span></a>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle " href="#" id="dropdownId" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Our Story</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <div class="dropdown-menu border-0 bg-light rounded-0 mt-2" aria-labelledby="dropdownId">
                     <a class="dropdown-item" href="#">About</a>
                     <a class="dropdown-item" href="#">Features</a>
                     <a class="dropdown-item" href="#">Contact Us</a>
@@ -42,7 +43,7 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">For Employers</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <div class="dropdown-menu border-0 bg-light rounded-0 mt-2" aria-labelledby="dropdownId">
                     <a class="dropdown-item" href="#">Overview</a>
                     <a class="dropdown-item" href="#">Our Products</a>
                     <a class="dropdown-item" href="#">Schedule a Demo</a>
@@ -51,7 +52,7 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">Resources</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <div class="dropdown-menu border-0 bg-light rounded-0 mt-2" aria-labelledby="dropdownId">
                     <a class="dropdown-item" href="#">Our Resources</a>
                     <a class="dropdown-item" href="#">Newsroom</a>
                     <a class="dropdown-item" href="#">D&I Article</a>
@@ -61,25 +62,52 @@
               </ul>
             </div>
           </div>
-          <a name="" id="" class="btn btn-primary" href="#" role="button">Client Login</a>
+          <a name="" id="" class="btn btn-primary d-none d-md-block d-md-sm rounded-5 " href="#" role="button">Client Login</a>
         </div>
       </nav>
     </header>        
     <div class="visual">
-        <div class="visualWrap m-auto">
+        <div class="visualWrap m-auto container ">
             <div class="row">
-                <div class="col-md-6 ">
-                    <p class="fs-3 mb-5">Improve inclusion and equity in your workplace with <span><b>Holistic DEI Assessments, Benchmarking, and Solutions</b></span></p>
-                    <a name="" id="" class="btn btn-primary" href="#" role="button">Schedule a Demo</a>
-                    <a name="" id="" class="btn btn-primary" href="#" role="button">Our Products</a>
-                </div>
                 <div class="col-md-6">
+                    <p class="fs-2 mb-5">Improve inclusion and equity 
+                      <br>in your workplace with 
+                      <br><span><b>Holistic DEI Assessments, 
+                      <br>Benchmarking, 
+                      <br>and Solutions</b></span></p>
+                    <div class="btnWrap d-flex gap-2">
+                      <a name="" id="" class="btn btn-primary btn-sm " href="#" role="button">Schedule a Demo</a>
+                      <a name="" id="" class="btn btn-primary btn-sm " href="#" role="button">Our Products</a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-none d-lg-block">
+                  <img src="images/visual.png" alt="">
                     
                 </div>
             </div>
         </div>
     </div>
-    
+   <div class="content01">
+     <div class="container">
+        <div class="row py-5">
+          <div class="offset-0 offset-md-2 col-md-6 m-md-auto fs-2   my-5 my-md-5">
+            <span>Kanarys, Inc. is a technology company focused solely on providing the tools organizations need to create
+              long-term, systemic change around DEI challenges. We are transforming DEI work with data.</span>
+          </div>
+        </div>
+     </div>
+   </div>
+   <div class="content02 py-5">
+    <h2 class="px-5 fs-3 fw-bold">Our Clients</h2>
+    <div class="container">
+
+    </div>
+   </div>
+   <div class="content03">
+      <div class="container">
+        <h1 class="text-center position-relative">Use Kanarys to Create Equitable Workplaces</h1>
+      </div>
+   </div>
 
 
 
