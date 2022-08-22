@@ -294,13 +294,15 @@ div .quick{
  }
 .ftBottom{
     width: 1300px; margin: 0 auto;
-    position: relative;}
+    position: relative;
+
+}
 .ftBottom a{
     width: 245px;
     position: absolute;
     left: 0; margin: 20px;
 }
-.ftBottom img{padding: 20px 30px;}
+.ftLogo img{padding: 20px 30px;}
 .ftadd{
     display: block;
     float: right;
@@ -317,10 +319,11 @@ div .quick{
 .ftBottom .ftadd p span::after{content: ''; width: 2px; height: 12px; background: #7a7f85; display: inline-block; margin: 0 18px;}
 .ftBottom .ftadd p span::after{content: ''; width: 2px; height: 12px; background: #7a7f85; display: inline-block; margin: 0 18px;}
 
-.ftadd .copyright{
+.copy .copyright{
     display: block;
     text-align: left; 
     color: #9aa0a7;
+
 }
 
 
