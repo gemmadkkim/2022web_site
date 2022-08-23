@@ -66,8 +66,10 @@ header .btn,
     width: 70px;
     margin-top: 30px;
 }
-
-.content02 .container img{
+.content02 .container li span{
+    font-size: 12px;
+}
+.content02 .container li img{
     width: 120px;height: 90px;
     object-fit: contain;
 }
@@ -214,11 +216,11 @@ footer .container .ftR .snsIcons{
 .owl-nav .owl-prev,
 .owl-nav .owl-next{
     position: absolute;
-    left: 0;top: 50%;
+    left: -40px;top: 50%;
     transform: translateY(-50%);
     z-index: 99;
 }
-.owl-nav .owl-next{left: 95%;}
+.owl-nav .owl-next{left: 101%;}
 .owl-nav i{
     color: #ddd;
     font-size: 22px;
@@ -313,6 +315,9 @@ footer .container .ftR .snsIcons{
     .ftBottom .row{
         justify-content: center;
     }
+
+    .owl-nav .owl-next{left: 0}
+    .owl-nav .owl-next{left: 95%;}
 
 
 
