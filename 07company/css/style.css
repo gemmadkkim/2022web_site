@@ -673,7 +673,8 @@ footer{
 }
 .sub .content{
     width: 1260px;
-    height: 100%;
+    height:100%;
+    position: relative;
 }
 .sub .content .tabCon{
     width: 100%;
@@ -699,6 +700,10 @@ footer{
     width: 1000px;    
     margin: 0 auto;
     padding: 50px 20px;
+}
+.sub .content .tabCon .plfCon img{
+    margin: 0 auto;
+    object-fit: contain;
 }
 .sub .content .tabCon .plfCon img:first-child{
     margin: 0 auto;
