@@ -1,1 +1,49 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.navTop {
+  position: fixed;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  background: #eee;
+}
+.navTop .gnb {
+  margin-left: auto;
+}
+.navTop .gnb ul {
+  display: flex;
+  height: 100%;
+}
+.navTop .gnb li {
+  height: 100%;
+  padding: 0 10px;
+}
+.navTop .gnb li:hover, .navTop .gnb li.active {
+  background-color: skyblue;
+}
+.navTop .gnb li a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
