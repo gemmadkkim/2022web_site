@@ -1,0 +1,102 @@
+//color
+$fcolor01:#333;
+$fcolor02:#FFF8DE;
+
+$bcolor01:#F5B72E;
+$bcolor02:#0f0f0f;
+
+
+//menu
+#menu{
+    width: 100%;height: 60px;
+    position: absolute;top: 0;left: 0;
+    border-bottom: solid 1px $bcolor01;
+    z-index: 1;
+    .navWrap{
+        margin: 0 auto;
+        width: 1535px;
+        height: 100%;
+        .nav{
+            width: 50%;height: 100%;
+            margin-left: auto;
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;align-items: center;
+            li{
+                width: 100%;
+                a{
+                    display: block;
+                    line-height: 60px;
+                    font-size: 24px;
+                    text-align: right;
+                    font-weight: 500;
+                    color: $fcolor02;
+                    transition: .3s;
+                    &:hover{
+                        color:$fcolor01
+                    }
+                }
+            }
+        }
+    }
+}
+
+//page_home
+#fullpage{}
+#fullpage .section{background: $bcolor02;}
+.home{
+    width: 100%; height: 100vh;
+    overflow: hidden;
+    position: relative;
+    .mainBg{
+        .sun {
+            position: absolute;
+            z-index: 0 !important;
+            width: 600px;
+            top: -65px;
+            right: 40px;
+            transform:rotate(160deg);
+            animation:sunAni 4s alternate infinite ;
+            }
+        .bg02{
+            position: absolute;
+            left: -180px;bottom: -380px;
+            transform: scale(1.2);
+        }
+        .p02{
+            position: absolute;
+            z-index: 665;
+            top: 400px;
+            right: 360px;
+            width: 300px;
+            height: auto;
+            animation: p02Ani 4s ease-in-out infinite;
+        }
+        .p01{
+            position: absolute;
+            top: 70px;
+            right: -45px;
+            width: 680px;
+            animation: p01Ani 3s ease-in-out infinite;
+            z-index: 999;
+        }
+    }
+
+}
+@keyframes sunAni {
+    to{
+        transform:rotate(145deg);
+    }
+}
+@keyframes p01Ani {
+    50%{transform: rotate(5deg);}
+    100%{transform: rotate(0);}
+}
+@keyframes p02Ani {
+    50%{transform: rotate(5deg);}
+    100%{transform: rotate(0);}
+}
+
+//page_lineup

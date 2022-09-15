@@ -1,0 +1,130 @@
+#menu {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: solid 1px #F5B72E;
+  z-index: 1;
+}
+#menu .navWrap {
+  margin: 0 auto;
+  width: 1535px;
+  height: 100%;
+}
+#menu .navWrap .nav {
+  width: 50%;
+  height: 100%;
+  margin-left: auto;
+}
+#menu .navWrap ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu .navWrap ul li {
+  width: 100%;
+}
+#menu .navWrap ul li a {
+  display: block;
+  line-height: 60px;
+  font-size: 24px;
+  text-align: right;
+  font-weight: 500;
+  color: #FFF8DE;
+  transition: 0.3s;
+}
+#menu .navWrap ul li a:hover {
+  color: #333;
+}
+
+#fullpage .section {
+  background: #0f0f0f;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.home .mainBg .sun {
+  position: absolute;
+  z-index: 0 !important;
+  width: 600px;
+  top: -65px;
+  right: 40px;
+  transform: rotate(160deg);
+  -webkit-animation: sunAni 4s alternate infinite;
+          animation: sunAni 4s alternate infinite;
+}
+.home .mainBg .bg02 {
+  position: absolute;
+  left: -180px;
+  bottom: -380px;
+  transform: scale(1.2);
+}
+.home .mainBg .p02 {
+  position: absolute;
+  z-index: 665;
+  top: 400px;
+  right: 360px;
+  width: 300px;
+  height: auto;
+  -webkit-animation: p02Ani 4s ease-in-out infinite;
+          animation: p02Ani 4s ease-in-out infinite;
+}
+.home .mainBg .p01 {
+  position: absolute;
+  top: 70px;
+  right: -45px;
+  width: 680px;
+  -webkit-animation: p01Ani 3s ease-in-out infinite;
+          animation: p01Ani 3s ease-in-out infinite;
+  z-index: 999;
+}
+
+@-webkit-keyframes sunAni {
+  to {
+    transform: rotate(145deg);
+  }
+}
+
+@keyframes sunAni {
+  to {
+    transform: rotate(145deg);
+  }
+}
+@-webkit-keyframes p01Ani {
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes p01Ani {
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes p02Ani {
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes p02Ani {
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}/*# sourceMappingURL=style.css.map */

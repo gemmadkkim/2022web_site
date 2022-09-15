@@ -9,4 +9,4 @@
 8. kanarys https://gemmadkkim.github.io/2022web_site/08bootstrap
 9. todolist https://gemmadkkim.github.io/2022web_site/09todolist
 10. fullpage https://gemmadkkim.github.io/2022web_site/10fullpage
-11. fullpage https://gemmadkkim.github.io/2022web_site/11jjf
+11. fullpage https://gemmadkkim.github.io/2022web_site/11jazzfestival
