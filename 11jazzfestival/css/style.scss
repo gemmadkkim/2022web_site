@@ -82,6 +82,10 @@ $bcolor02:#0f0f0f;
             animation: p01Ani 3s ease-in-out infinite;
             z-index: 999;
         }
+        .logoBox{
+            position: absolute;left: 50px;height: 200px;
+            z-index: 9999;
+        }
     }
 
 }
