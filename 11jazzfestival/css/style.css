@@ -136,6 +136,7 @@
 }
 .lineup {
   position: relative;
+  height: 100vh;
 }
 .lineup .date {
   position: absolute;
@@ -143,18 +144,21 @@
   left: 200px;
   transform: translateY(-50%);
 }
-.lineup .pL01 h3 {
+.lineup .pList {
+  height: 100%;
+}
+.lineup .pList .pL01 h3 {
   color: #fff;
   margin-bottom: 20px;
 }
-.lineup .pL01 ul li {
+.lineup .pList .pL01 ul li {
   height: 35px;
 }
-.lineup .pL01 ul li:hover a {
+.lineup .pList .pL01 ul li:hover a {
   opacity: 1;
   font-weight: bold;
 }
-.lineup .pL01 ul li a {
+.lineup .pList .pL01 ul li a {
   display: block;
   height: 100%;
   color: #fff;
@@ -162,7 +166,29 @@
   transition: 0.3s;
   font-size: 16px;
 }
-.lineup .pL01 ul li a span {
+.lineup .pList .pL01 ul li a span {
   font-style: 14px;
   opacity: 0.5;
+}
+.lineup .pList .pPhoto {
+  position: relative;
+}
+.lineup .pList .pPhoto .photoLayer {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.lineup .pList .pPhoto .photoLayer div {
+  width: 600px;
+  height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.lineup .pList .pPhoto .photoLayer div img {
+  transform: scale();
 }/*# sourceMappingURL=style.css.map */
