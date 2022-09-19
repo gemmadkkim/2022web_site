@@ -1,6 +1,7 @@
 //color
 $fcolor01:#333;
 $fcolor02:#FFF8DE;
+$fcolor03:#fff;
 
 $bcolor01:#F5B72E;
 $bcolor02:#0f0f0f;
@@ -105,8 +106,38 @@ $bcolor02:#0f0f0f;
 
 //page_lineup
 .lineup{
-    h1{
-
+    position: relative;
+    .date{
+        position: absolute;
+        top: 50%;left: 200px;
+        transform: translateY(-50%);
     }
-}
+    .pL01{
+        h3{
+            color:$fcolor03;
+            margin-bottom: 20px;
+        }
+        ul{
+            li{
+                height: 35px;
+                
+                &:hover a{
+                    opacity:1;
+                    font-weight: bold;
+                }
+                a{
+                    display: block;height: 100%;
+                    color:$fcolor03;
+                    opacity: .7;
+                    transition: .3s;
+                    font-size: 16px;
+                    span{
+                        font-style: 14px;
+                        opacity: .5;
+                    }
+                }
+            }
+        }
+    }
 
+}
