@@ -115,28 +115,30 @@ $bcolor02:#0f0f0f;
     }
     .pList{
         height: 100%;
-        .pL01{
-            h3{
-                color:$fcolor03;
-                margin-bottom: 20px;
-            }
-            ul{
-                li{
-                    height: 35px;
-                    
-                    &:hover a{
-                        opacity:1;
-                        font-weight: bold;
-                    }
-                    a{
-                        display: block;height: 100%;
-                        color:$fcolor03;
-                        opacity: .7;
-                        transition: .3s;
-                        font-size: 16px;
-                        span{
-                            font-style: 14px;
+        .dWrap{
+            .pL01{
+                h3{
+                    color:$fcolor03;
+                    margin-bottom: 50px;
+                }
+                ul{
+                    li{
+                        height: 35px;
+                        
+                        &:hover a{
+                            opacity:1;
+                            font-weight: bold;
+                        }
+                        a{
+                            display: block;height: 100%;
+                            color:$fcolor03;
                             opacity: .5;
+                            transition: .3s;
+                            font-size: 16px;
+                            span{
+                                font-style: 14px;
+                                opacity: .4;
+                            }
                         }
                     }
                 }
@@ -149,14 +151,10 @@ $bcolor02:#0f0f0f;
                 border-radius: 50%;
                 overflow: hidden;
                 position: absolute;
-                top: 50%;left: 0;
-                transform:translateY(-50%);
+                top: 100px;left: 0;
                 div{
-                    width: 600px;height: 600px;
-                    object-fit: contain;
                     img{
-                    transform:scale()
-
+                    transform:scale();
                     }
                 }
             }
@@ -164,3 +162,4 @@ $bcolor02:#0f0f0f;
 
     }
 }
+
