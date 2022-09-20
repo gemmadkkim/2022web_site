@@ -17,6 +17,11 @@ $bcolor02:#0f0f0f;
         margin: 0 auto;
         width: 1535px;
         height: 100%;
+        button{
+            span{
+                border-radius: 50%;
+            }
+        }
         .nav{
             width: 50%;height: 100%;
             margin-left: auto;
@@ -163,3 +168,9 @@ $bcolor02:#0f0f0f;
     }
 }
 
+@media (max-width: 991px) {
+    .home .mainBg{
+        display: none;
+        
+    }
+}

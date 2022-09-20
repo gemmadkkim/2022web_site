@@ -12,6 +12,9 @@
   width: 1535px;
   height: 100%;
 }
+#menu .navWrap button span {
+  border-radius: 50%;
+}
 #menu .navWrap .nav {
   width: 50%;
   height: 100%;
@@ -184,4 +187,10 @@
 }
 .lineup .pList .pPhoto .photoLayer div img {
   transform: scale();
+}
+
+@media (max-width: 991px) {
+  .home .mainBg {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
