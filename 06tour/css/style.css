@@ -503,6 +503,13 @@ button{
     color:#5E2BB8;
     transition:0.3s;
 }
+#wCell .v02cont01 span{padding-top: 15px;font-weight: bold;}
+#wCell .v02cont01 .icon{
+    position: absolute;
+    top: 20%;left: 50%;
+    transform: translateX(-50%);
+}
+
 .visual02 .v02Cont .v02cont01 a,
 .visual02 .v02Cont .v02cont02 a{
     display: block;
@@ -525,6 +532,10 @@ button{
     background-color: rgba(255,255,255,0.3);
     color:#5E2BB8;
     opacity:1;
+
+}
+.visual02 .v02Cont .v02cont01:hover .icon{
+    display: none;
 }
 .visual02 .v02Cont .v02cont02{
     width: 230px;

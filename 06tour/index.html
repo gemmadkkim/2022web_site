@@ -13,17 +13,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/hanatour_logo_s.png" type="image/x-icon">
-
-    
-
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.css" integrity="sha512-LTz09eiSkjtMayQgsyCcxuA2POUuvwdJoejrNLLIj5tulySAEAFgRHXW5JO4/qW36nurH8iApZ4SMj9E2rRHtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
     
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   
     <script>
@@ -375,11 +371,12 @@
                         });
                     </script>
                 </div>
-                <div class="v02Cont clearfix">
+                <div class="v02Cont clearfix" id="wCell">
                     <div class="v02cont01">
-                        <p>SEOUL</p>
-                        <span class="present"><b>구름 비</b><br>소나기 확률 80%</span>
+                        <p class="city">SEOUL</p>
+                        <span class="current"  ></span>
                         <a href="#">지역별 날씨 더 알아보기</a>
+                        <div class="icon"></div>
                     </div>
                     <div class="v02cont02">
                         <p>여행후기</p>
@@ -446,6 +443,36 @@
     </div>
 </footer>
 
+
+<script>
+    const myid = "6539d79152669df5f0027d4f6ec165db";
+    let loc = "seoul";
+    loca(loc);
+    function loca(loc){
+        $.ajax({
+            url:"https://api.openweathermap.org/data/2.5/weather?q=" + loc + "&appid="+myid +"&units=metric&lang=kr",
+            dataType:"json",
+            success:locData 
+        })
+    }
+
+    function locData(data){
+
+        console.log(data);
+        let city = data.name;
+        // let weather = data.weather[0].description;
+        // let temp = parseInt(data.main.temp)+"&#x2103";
+        let icon = data.weather[0].icon;
+        let wAndT = data.weather[0].description + "  " + parseInt(data.main.temp)+"&#x2103"
+        let iconUrl = `<img src="http://openweathermap.org/img/wn/${icon}@2x.png">`;
+
+        $(".city").html(city);
+        $(".current").html(wAndT);
+        $(".icon").html(iconUrl);
+        // $(".temp").html(temp);
+
+    }
+</script>
 
 </body>
 </html>
