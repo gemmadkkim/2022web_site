@@ -12,10 +12,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
+    <script src="js/data.js"></script>
 </head>
 <body>
 <header>
-    <div id="menu">
+
+    <nav class="navbar navbar-expand-sm " id="menu">
+          <div class=" navWrap">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"  data-bs-target="#collapsibleNavId"  aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class=" nav collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-md-auto mt-2 mt-lg-0">
+                    <li datamenu-anchor="home"><a href="#home">HOME</a></li>
+                    <li datamenu-anchor="lineup"><a href="#lineup">LINEUP</a></li>
+                    <li datamenu-anchor="ticket"><a href="#ticket">TICKET</a></li>
+                    <li datamenu-anchor="program"><a href="#program">PROGRAM</a></li>
+                    <li datamenu-anchor="notice"><a href="#notice">NOTICE</a></li>
+                </ul>
+            </div>
+      </div>
+    </nav>
+  
+    <!-- <div id="menu">
         <div class="navWrap">
             <div class="nav">
                 <ul>
@@ -27,7 +46,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
     <div id="fullpage">
         <div class="section home" data-anchor="home">
             <div class="mainBg">
@@ -47,15 +66,15 @@
                 <span class="ts-5">라인업</span>
             </div>
             <div class="row pList">
-                <div class="col-md-6 ">
+                <div class="col-md-6 dWrap">
                     <div class="date pL01">
-                        <h3>시월 일일</h3>
+                        <h3 class="dTab">시월 일일</h3>
                         <ul >
                             <li><a href="">재즈미어 혼 <span>Jazzmeia Horn</span></a></li>
                             <li><a href="">은두두조 마카티니 트리오 <span>Nduduzo Makhathini Trio</span></a></li>
                             <li><a href="">김현철 <span>KIM HYUN CHUL</span></a></li>
                             <li><a href="">하드피아노 <span>HARDPIANO</span></a></li>
-                            <li><a href="">숨라<span>SUMRRÁ</span></a></li>
+                            <li><a href="">숨라 <span>SUMRRÁ</span></a></li>
                             <li><a href="">이지혜 트리오 feat. 전송이 <span>Gee Hye Lee Trio feat. Song Yi Jeon</span></a></li>
                             <li><a href="">겨울에서봄 <span>Winter to Spring</span></a></li>
                             <li><a href="">호아나 고밀라 & 라이아 바예스 <span>Joana Gomila & Laia Vallès</span></a></li>
@@ -67,10 +86,50 @@
                             <li><a href="">유레카 밴드 <span>Eureka Band</span></a></li>
                         </ul>
                     </div>
+                    <!-- <div class="date pL02">
+                        <h3 class="dTab">시월 이일</h3>
+                        <ul >
+                            <li><a href="">재즈미어 혼 <span>Jazzmeia Horn</span></a></li>
+                            <li><a href="">은두두조 마카티니 트리오 <span>Nduduzo Makhathini Trio</span></a></li>
+                            <li><a href="">김현철 <span>KIM HYUN CHUL</span></a></li>
+                            <li><a href="">하드피아노 <span>HARDPIANO</span></a></li>
+                            <li><a href="">숨라 <span>SUMRRÁ</span></a></li>
+                            <li><a href="">이지혜 트리오 feat. 전송이 <span>Gee Hye Lee Trio feat. Song Yi Jeon</span></a></li>
+                            <li><a href="">겨울에서봄 <span>Winter to Spring</span></a></li>
+                            <li><a href="">호아나 고밀라 & 라이아 바예스 <span>Joana Gomila & Laia Vallès</span></a></li>
+                            <li><a href="">조해인 퀸텟 <span>Hae In Cho Quintet</span></a></li>
+                            <li><a href="">용투더썬 <span>Yong to the Sun</span></a></li>
+                            <li><a href="">마누엘 구티에레스 <span>Manuel Gutiérrez</span></a></li>
+                            <li><a href="">욘 <span>DJ Set JON DJ Set</span></a></li>
+                            <li><a href="">서정밴드 <span>SEOJEONG BAND</span></a></li>
+                            <li><a href="">유레카 밴드 <span>Eureka Band</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="date pL03">
+                        <h3 class="dTab">시월 삼일</h3>
+                        <ul >
+                            <li><a href="">재즈미어 혼 <span>Jazzmeia Horn</span></a></li>
+                            <li><a href="">은두두조 마카티니 트리오 <span>Nduduzo Makhathini Trio</span></a></li>
+                            <li><a href="">김현철 <span>KIM HYUN CHUL</span></a></li>
+                            <li><a href="">하드피아노 <span>HARDPIANO</span></a></li>
+                            <li><a href="">숨라 <span>SUMRRÁ</span></a></li>
+                            <li><a href="">이지혜 트리오 feat. 전송이 <span>Gee Hye Lee Trio feat. Song Yi Jeon</span></a></li>
+                            <li><a href="">겨울에서봄 <span>Winter to Spring</span></a></li>
+                            <li><a href="">호아나 고밀라 & 라이아 바예스 <span>Joana Gomila & Laia Vallès</span></a></li>
+                            <li><a href="">조해인 퀸텟 <span>Hae In Cho Quintet</span></a></li>
+                            <li><a href="">용투더썬 <span>Yong to the Sun</span></a></li>
+                            <li><a href="">마누엘 구티에레스 <span>Manuel Gutiérrez</span></a></li>
+                            <li><a href="">욘 <span>DJ Set JON DJ Set</span></a></li>
+                            <li><a href="">서정밴드 <span>SEOJEONG BAND</span></a></li>
+                            <li><a href="">유레카 밴드 <span>Eureka Band</span></a></li>
+                        </ul>
+                    </div> -->
                 </div>
                 <div class="col-md-6 pPhoto">
                     <div class="photoLayer">
-                        <div class=""><img src="images/horn.png" alt=""></div>
+                        <div class="">
+                            <img src="images/player_pic/horn.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
