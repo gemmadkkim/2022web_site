@@ -18,9 +18,15 @@ $bcolor02:#0f0f0f;
         width: 1535px;
         height: 100%;
         button{
-            span{
-                border-radius: 50%;
-            }
+            border: 0 none;
+            outline: 0;
+            width: 40px;height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;align-items: center;
+            margin-left: auto;
+            margin-right: 10px;
+            box-shadow: none;
         }
         .nav{
             width: 50%;height: 100%;
@@ -56,6 +62,7 @@ $bcolor02:#0f0f0f;
     width: 100%; height: 100vh;
     overflow: hidden;
     position: relative;
+
     .mainBg{
         .sun {
             position: absolute;
@@ -89,7 +96,10 @@ $bcolor02:#0f0f0f;
             z-index: 999;
         }
         .logoBox{
-            position: absolute;left: 50px;height: 200px;
+            width: 80%;height: 800px;
+            position: absolute;
+            top: 50%;left: 50%;
+            transform: translate(-50%,-50%);
             z-index: 9999;
         }
     }
@@ -168,9 +178,21 @@ $bcolor02:#0f0f0f;
     }
 }
 
-@media (max-width: 991px) {
-    .home .mainBg{
-        display: none;
-        
+@media (max-width: 596px) {
+
+}
+
+//page-ticket
+
+.ticket{
+    .hTop{
+
+    }
+    .tk{
+        .t01{
+            .tBody{
+                img{width: 100px;height: 25px;}
+            }
+        }
     }
 }

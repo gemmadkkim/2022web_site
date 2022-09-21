@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,77 +9,80 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css" integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+        integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
     <script src="js/data.js"></script>
 </head>
+
 <body>
-<header>
+    <header>
+        <nav class="navbar navbar-expand-sm " id="menu">
+            <div class="navWrap">
+                <button class="btn navbar-toggler d-lg-none bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-md-auto mt-2 mt-lg-0">
+                        <li datamenu-anchor="home"><a href="#home">HOME</a></li>
+                        <li datamenu-anchor="lineup"><a href="#lineup">LINEUP</a></li>
+                        <li datamenu-anchor="ticket"><a href="#ticket">TICKET</a></li>
+                        <li datamenu-anchor="program"><a href="#program">PROGRAM</a></li>
+                        <li datamenu-anchor="notice"><a href="#notice">NOTICE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <nav class="navbar navbar-expand-sm " id="menu">
-        <div class="navWrap">
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-                    <div class="nav collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-md-auto mt-2 mt-lg-0">
-                            <li datamenu-anchor="home"><a href="#home">HOME</a></li>
-                            <li datamenu-anchor="lineup"><a href="#lineup">LINEUP</a></li>
-                            <li datamenu-anchor="ticket"><a href="#ticket">TICKET</a></li>
-                            <li datamenu-anchor="program"><a href="#program">PROGRAM</a></li>
-                            <li datamenu-anchor="notice"><a href="#notice">NOTICE</a></li>
-                        </ul>
+        <div id="fullpage">
+            <div class="section home" data-anchor="home">
+                <div class="mainBg">
+                    <img class="bg01" src="images/main_bg_top.jpg" alt="bgT">
+                    <img class="sun" src="images/main_bg_sun.png" alt="">
+                    <img class="bg02" src="images/main_bg_btm.png" alt="bgB">
+                    <img class="p02" src="images/player02.png" alt="p02">
+                    <img class="p01" src="images/player01.png" alt="p01">
+                    <div class="logoBox">
+                        <img class="logo01" src="images/logo01.png" alt="logo01">
+                        <img class="logo02" src="images/logo02.png" alt="logo02">
+                        <img class="logo03" src="images/logo03.png" alt="logo03">
                     </div>
-            </div>
-    </nav>
+                </div>
 
-    
-
-    <div id="fullpage">
-        <div class="section home" data-anchor="home">
-            <div class="mainBg">
-                <img class="bg01" src="images/main_bg_top.jpg" alt="bgT">
-                <img class="sun" src="images/main_bg_sun.png" alt="">
-                <img class="bg02" src="images/main_bg_btm.png" alt="bgB">
-                <img class="p02" src="images/player02.png" alt="p02">
-                <img class="p01" src="images/player01.png" alt="p01">
-                <img class="logo01"src="images/logo01.png" alt="logo01">
-                <img class="logo02"src="images/logo02.png" alt="logo02">
-                <img class="logo03"src="images/logo03.png" alt="logo03">
             </div>
-
-        </div>
-        <div class="section lineup pt-5" data-anchor="lineup">
-            <div class="hTop text-white">
-                <h1 class="">LINEUP</h1>
-                <span class="ts-5">라인업</span>
-            </div>
-            <div class="row pList">
-                <div class="col-md-6 dWrap">
-                    <div class="date pL01">
-                        <h3 class="dTab">시월 일일</h3>
-                        <ul >
-                            <li><a href="">재즈미어 혼 <span>Jazzmeia Horn</span></a></li>
-                            <li><a href="">은두두조 마카티니 트리오 <span>Nduduzo Makhathini Trio</span></a></li>
-                            <li><a href="">김현철 <span>KIM HYUN CHUL</span></a></li>
-                            <li><a href="">하드피아노 <span>HARDPIANO</span></a></li>
-                            <li><a href="">숨라 <span>SUMRRÁ</span></a></li>
-                            <li><a href="">이지혜 트리오 feat. 전송이 <span>Gee Hye Lee Trio feat. Song Yi Jeon</span></a></li>
-                            <li><a href="">겨울에서봄 <span>Winter to Spring</span></a></li>
-                            <li><a href="">호아나 고밀라 & 라이아 바예스 <span>Joana Gomila & Laia Vallès</span></a></li>
-                            <li><a href="">조해인 퀸텟 <span>Hae In Cho Quintet</span></a></li>
-                            <li><a href="">용투더썬 <span>Yong to the Sun</span></a></li>
-                            <li><a href="">마누엘 구티에레스 <span>Manuel Gutiérrez</span></a></li>
-                            <li><a href="">욘 <span>DJ Set JON DJ Set</span></a></li>
-                            <li><a href="">서정밴드 <span>SEOJEONG BAND</span></a></li>
-                            <li><a href="">유레카 밴드 <span>Eureka Band</span></a></li>
-                        </ul>
-                    </div>
-                    <!-- <div class="date pL02">
+            <div class="section lineup pt-5" data-anchor="lineup">
+                <div class="hTop text-white">
+                    <h1 class="">LINEUP</h1>
+                    <span class="ts-5">라인업</span>
+                </div>
+                <div class="row pList">
+                    <div class="col-md-6 dWrap">
+                        <div class="date pL01">
+                            <h3 class="dTab">시월 일일</h3>
+                            <ul>
+                                <li><a href="">재즈미어 혼 <span>Jazzmeia Horn</span></a></li>
+                                <li><a href="">은두두조 마카티니 트리오 <span>Nduduzo Makhathini Trio</span></a></li>
+                                <li><a href="">김현철 <span>KIM HYUN CHUL</span></a></li>
+                                <li><a href="">하드피아노 <span>HARDPIANO</span></a></li>
+                                <li><a href="">숨라 <span>SUMRRÁ</span></a></li>
+                                <li><a href="">이지혜 트리오 feat. 전송이 <span>Gee Hye Lee Trio feat. Song Yi Jeon</span></a>
+                                </li>
+                                <li><a href="">겨울에서봄 <span>Winter to Spring</span></a></li>
+                                <li><a href="">호아나 고밀라 & 라이아 바예스 <span>Joana Gomila & Laia Vallès</span></a></li>
+                                <li><a href="">조해인 퀸텟 <span>Hae In Cho Quintet</span></a></li>
+                                <li><a href="">용투더썬 <span>Yong to the Sun</span></a></li>
+                                <li><a href="">마누엘 구티에레스 <span>Manuel Gutiérrez</span></a></li>
+                                <li><a href="">욘 <span>DJ Set JON DJ Set</span></a></li>
+                                <li><a href="">서정밴드 <span>SEOJEONG BAND</span></a></li>
+                                <li><a href="">유레카 밴드 <span>Eureka Band</span></a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="date pL02">
                         <h3 class="dTab">시월 이일</h3>
                         <ul >
                             <li><a href="">재즈미어 혼 <span>Jazzmeia Horn</span></a></li>
@@ -116,34 +120,74 @@
                             <li><a href="">유레카 밴드 <span>Eureka Band</span></a></li>
                         </ul>
                     </div> -->
+                    </div>
+                    <div class="col-md-6 pPhoto">
+                        <div class="photoLayer">
+                            <div class="">
+                                <img src="images/player_pic/horn.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 pPhoto">
-                    <div class="photoLayer">
-                        <div class="">
-                            <img src="images/player_pic/horn.png" alt="">
+
+            </div>
+            <div class="section ticket pt-5" data-anchor="ticket">
+                <div class="hTop text-white">
+                    <h1 class="">TICKET</h1>
+                    <span class="ts-5">티켓</span>
+                </div>
+                <div class="tk">
+                    <div class="owl-carousel owl-theme">
+                        <div class="t01 item" data-hash="general">
+                            <div class="tTop">
+                                <h3>GENERAL TICKET</h3>
+                                <span>일반 예매</span>
+                            </div>
+                            <div class="tBody">
+                                <div class="tDate">
+                                    <span>예매기간</span><span> : 2022년 8월 2일 (화) - 9월 30일 (금)</span>
+                                </div>
+                                <div class="tt">
+                                    <span>예매처</span><span> : <img src="images/nft.png" alt="nft"> (1522-5149)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="t02 item" data-hash="nft">
+                            <h3>NFT PASS</h3>
+                            <span>NFT PASS</span>
+                        </div>
+                        <div class="t03 item" data-hash="camping">
+                            <h3>CAMPING PACKAGE</h3>
+                            <span>캠핑 패키지</span>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="section program pt-5" data-anchor="program">
+                <div class="hTop text-white">
+                    <h1 class="">PROGRAM</h1>
+                    <span class="ts-5">프로그램</span>
+                </div>
+            </div>
+            <div class="section notice pt-5" data-anchor="notice">
+                <div class="hTop text-white">
+                    <h1 class="">NOTICE</h1>
+                    <span class="ts-5">공지사항</span>
+                </div>
+            </div>
 
         </div>
-        <div class="section ticket" data-anchor="ticket">
-            ticket
-        </div>
-        <div class="section program" data-anchor="program">
-            program
-        </div>
-        <div class="section notice" data-anchor="notice">
-            notice
-        </div>
-
-    </div>
-</header>   
+    </header>
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js" integrity="sha512-vyRAVI0IEm6LI/fVSv/Wq/d0KUfrg3hJq2Qz5FlfER69sf3ZHlOrsLriNm49FxnpUGmhx+TaJKwJ+ByTLKT+Yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"
+        integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.min.js"
+        integrity="sha512-vyRAVI0IEm6LI/fVSv/Wq/d0KUfrg3hJq2Qz5FlfER69sf3ZHlOrsLriNm49FxnpUGmhx+TaJKwJ+ByTLKT+Yg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
