@@ -9,4 +9,5 @@
 8. kanarys https://gemmadkkim.github.io/2022web_site/08bootstrap
 9. todolist https://gemmadkkim.github.io/2022web_site/09todolist
 10. fullpage https://gemmadkkim.github.io/2022web_site/10fullpage
-11. fullpage https://gemmadkkim.github.io/2022web_site/11jazzfestival
+11. JJF https://gemmadkkim.github.io/2022web_site/11jazzfestival
+12. axios weather https://gemmadkkim.github.io/2022web_site/12weather
