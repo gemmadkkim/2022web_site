@@ -7,3 +7,17 @@ $("#fullpage").fullpage({
     responsiveWidth:900
 
 });
+
+
+$(document).ready(function() {
+  $('.owl-carousel').owlCarousel({
+    items: 4,
+    loop: false,
+    center: true,
+    margin: 10,
+    callbacks: true,
+    URLhashListener: true,
+    autoplayHoverPause: true,
+    startPosition: 'URLHash'
+  });
+})
