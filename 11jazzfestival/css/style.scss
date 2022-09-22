@@ -96,7 +96,8 @@ $bcolor02:#0f0f0f;
             z-index: 999;
         }
         .logoBox{
-            width: 80%;height: 800px;
+            width: 80%;height: 80%;
+            overflow: hidden;
             position: absolute;
             top: 50%;left: 50%;
             transform: translate(-50%,-50%);
@@ -189,10 +190,85 @@ $bcolor02:#0f0f0f;
 
     }
     .tk{
-        .t01{
-            .tBody{
-                img{width: 100px;height: 25px;}
+        width: 100%;height: 100vh;
+        margin: 0 auto;
+        .row{
+            width: 100%;height: 80%;
+            border-top: 2px solid #333;
+            border-bottom: 2px solid #333;
+            .tSec{
+                .tBody{
+                    .tbWrap{
+                        .tDate{
+                            display: flex;
+                        }
+                        .tt{
+                            display: flex
+                        }
+                    }
+                }
             }
+            .tSec:hover{
+                
+                .tTop{
+                    .en{
+                        display: none;
+                    }
+                    .kr {
+                        display: block;
+                    }
+                }
+                .tBody{
+
+                }
+            }
+
+            .btn{
+                width: 300px;height: 50px;
+                border: 1px solid #fff;
+                border-radius: 25px;
+                line-height: 38px;
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .btn:hover{
+                background: $bcolor01;
+                border: 0 none;
+                span{
+                    color: $fcolor01;
+                    font-weight: bold;
+                }
+            }
+            .tTop{
+                height: 150px;
+                padding: 40px 20px;
+                position: relative;
+                h3{
+                    color: #fff;
+                    position: absolute;
+                    top: 50%;left: 50%;
+                    transform: translate(-50%,-50%);
+                    transition: .3s;
+                    &.kr{
+                        display: none;
+                    }
+                }
+            }
+            .t01,.t02,.t03,.t04{
+                position: relative;
+            }
+            .t01,.t02,.t03{
+                border-right: 2px solid #333;
+            }
+
+            .t01{
+                .tBody{
+                    img{width: 100px;height: 25px;}
+                }
+            }
+           
         }
     }
 }

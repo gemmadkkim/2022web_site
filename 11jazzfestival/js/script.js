@@ -21,3 +21,13 @@ $(document).ready(function() {
     startPosition: 'URLHash'
   });
 })
+
+$(document).ready(function() {
+
+  $(".tSec").mouseover(function(){
+    $(".tbWrap").animate().stop().slideDown();
+  });
+  $(".tSec").mouseout(function(){
+    $(".tbWrap").animate().stop().slideUp();
+  });
+})

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax07_kakao</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a:visited,
+        a:link {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .list li {
+            margin-bottom: 20px;
+        }
+
+        .search {
+            padding: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .search .inpSearch {
+            flex: 1 0 auto;
+            padding: 10px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            text-indent: 10px;
+        }
+
+        .inpSearch:focus {
+            outline: none;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        .search .btnIcon {
+            width: 30px;
+            height: 30px;
+            background: #fff;
+            color: #ccc;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="search">
+        <input type="text" class="inpSearch" placeholder="Search">
+        <div class="btnIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+    <ul class="list">
+        <a href="">
+            <h3 class="title"></h3>
+        </a>
+        <a href="">
+            <p class="contents"></p>
+        </a>
+        <a href=""><span class="datetime"></span></a>
+        <a href="">
+            <p class="url"></p>
+        </a>
+
+    </ul>
+    <script>
+
+        vSearch("");
+        function vSearch(loc) {
+            axios
+                .get(
+                    "https://dapi.kakao.com/v2/search/web?query=" + loc + "&size=10",
+                    {
+                        headers: { Authorization: 'KakaoAK f06425d88365c753dab010371c5b4d21' }
+                    }
+                )
+                .then(onResult)
+                .catch(onError);
+        }
+
+        function onResult(v) {
+            console.log(v.data.documents);
+
+            let viewList = "";
+
+            for (i = 0; i < v.data.documents.length; i++) {
+                viewList += `<li> 
+                <a href=""><h3>${v.data.documents[i].title}</h3></a>
+                <a href="">
+                    <p>${v.data.documents[i].contents}</p>
+                </a>
+                <a href=""><span>${v.data.documents[i].datetime}</span></a>
+                <a href="">
+                    <p>${v.data.documents[i].url}</p>
+                </a> 
+
+            </li>`
+            }
+
+            $(".list").html(viewList);
+        }
+
+
+        $(".btnIcon").click(function () {
+            let value = $(".inpSearch").val();
+            if (value == "") {
+                alert("검색어를 입력하세요")
+            } else {
+
+                vSearch(value);
+                $(".inpSearch").val("").focus(); 
+            }
+        })
+        $(".search").keyup(function (e) {
+            if (e.key == "Enter") {
+                console.log("enter ok");
+                let value = $(".inpSearch").val();
+                if (value == "") {
+                    alert("검색어를 입력하세요")
+                } else {
+                    vSearch(value);
+                    $(".inpSearch").val("").focus();
+                }
+            }
+        })
+        function onError(error) {
+            console.log("error");
+        }
+    </script>
+
+</body>
+
+</html>
