@@ -24,10 +24,12 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-  $(".tSec").mouseover(function(){
-    $(".tbWrap").animate().stop().slideDown();
+  $(".tSec").mouseenter(function(){
+    $(".tBody").hide()
+    $(this).find(".tBody").stop().slideDown();
   });
-  $(".tSec").mouseout(function(){
-    $(".tbWrap").animate().stop().slideUp();
+  $(".tSec").mouseleave(function(){
+    $(this).find(".tBody").stop().hide();
+
   });
 })

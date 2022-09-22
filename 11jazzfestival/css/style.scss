@@ -192,24 +192,37 @@ $bcolor02:#0f0f0f;
     .tk{
         width: 100%;height: 100vh;
         margin: 0 auto;
-        .row{
+        .tkrow{
             width: 100%;height: 80%;
             border-top: 2px solid #333;
             border-bottom: 2px solid #333;
             .tSec{
                 .tBody{
                     .tbWrap{
+                        display: none;
+                        transition: .3s;
+                        .price{
+                            h4{
+                                font-size: 18px;
+                            }
+                        }
                         .tDate{
                             display: flex;
                         }
                         .tt{
-                            display: flex
+                            display: flex;
+                            img{
+                                margin-left: 5px;
+                                margin-right: 5px;
+                            }
                         }
                     }
                 }
             }
             .tSec:hover{
-                
+                .tkImg{
+                    display: none;
+                }
                 .tTop{
                     .en{
                         display: none;
@@ -219,6 +232,9 @@ $bcolor02:#0f0f0f;
                     }
                 }
                 .tBody{
+                    .tbWrap{
+                        display: block;
+                    }
 
                 }
             }
@@ -264,8 +280,42 @@ $bcolor02:#0f0f0f;
             }
 
             .t01{
+                position: relative;
+                .tkImg{
+                    position: absolute;
+                    top: 50%;left: 50%;
+                    transform: translate(-50%,-50%);
+                    z-index: 99;
+                }
                 .tBody{
                     img{width: 100px;height: 25px;}
+                }
+            }
+            .t02{
+                position: relative;
+                .tkImg{
+                    position: absolute;
+                    top: 50%;left: 50%;
+                    transform: translate(-50%,-50%);
+                    z-index: 99;
+                }
+            }
+            .t03{
+                position: relative;
+                .tkImg{
+                    position: absolute;
+                    top: 50%;left: 50%;
+                    transform: translate(-50%,-50%);
+                    z-index: 99;
+                }
+            }
+            .t04{
+                position: relative;
+                .tkImg{
+                    position: absolute;
+                    top: 50%;left: 50%;
+                    transform: translate(-50%,-50%);
+                    z-index: 99;
                 }
             }
            

@@ -208,25 +208,42 @@
   height: 100vh;
   margin: 0 auto;
 }
-.ticket .tk .row {
+.ticket .tk .tkrow {
   width: 100%;
   height: 80%;
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
 }
-.ticket .tk .row .tSec .tBody .tbWrap .tDate {
+.ticket .tk .tkrow .tSec .tBody .tbWrap {
+  display: none;
+  transition: 0.3s;
+}
+.ticket .tk .tkrow .tSec .tBody .tbWrap .price h4 {
+  font-size: 18px;
+}
+.ticket .tk .tkrow .tSec .tBody .tbWrap .tDate {
   display: flex;
 }
-.ticket .tk .row .tSec .tBody .tbWrap .tt {
+.ticket .tk .tkrow .tSec .tBody .tbWrap .tt {
   display: flex;
 }
-.ticket .tk .row .tSec:hover .tTop .en {
+.ticket .tk .tkrow .tSec .tBody .tbWrap .tt img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.ticket .tk .tkrow .tSec:hover .tkImg {
   display: none;
 }
-.ticket .tk .row .tSec:hover .tTop .kr {
+.ticket .tk .tkrow .tSec:hover .tTop .en {
+  display: none;
+}
+.ticket .tk .tkrow .tSec:hover .tTop .kr {
   display: block;
 }
-.ticket .tk .row .btn {
+.ticket .tk .tkrow .tSec:hover .tBody .tbWrap {
+  display: block;
+}
+.ticket .tk .tkrow .btn {
   width: 300px;
   height: 50px;
   border: 1px solid #fff;
@@ -237,20 +254,20 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.ticket .tk .row .btn:hover {
+.ticket .tk .tkrow .btn:hover {
   background: #F5B72E;
   border: 0 none;
 }
-.ticket .tk .row .btn:hover span {
+.ticket .tk .tkrow .btn:hover span {
   color: #333;
   font-weight: bold;
 }
-.ticket .tk .row .tTop {
+.ticket .tk .tkrow .tTop {
   height: 150px;
   padding: 40px 20px;
   position: relative;
 }
-.ticket .tk .row .tTop h3 {
+.ticket .tk .tkrow .tTop h3 {
   color: #fff;
   position: absolute;
   top: 50%;
@@ -258,16 +275,56 @@
   transform: translate(-50%, -50%);
   transition: 0.3s;
 }
-.ticket .tk .row .tTop h3.kr {
+.ticket .tk .tkrow .tTop h3.kr {
   display: none;
 }
-.ticket .tk .row .t01, .ticket .tk .row .t02, .ticket .tk .row .t03, .ticket .tk .row .t04 {
+.ticket .tk .tkrow .t01, .ticket .tk .tkrow .t02, .ticket .tk .tkrow .t03, .ticket .tk .tkrow .t04 {
   position: relative;
 }
-.ticket .tk .row .t01, .ticket .tk .row .t02, .ticket .tk .row .t03 {
+.ticket .tk .tkrow .t01, .ticket .tk .tkrow .t02, .ticket .tk .tkrow .t03 {
   border-right: 2px solid #333;
 }
-.ticket .tk .row .t01 .tBody img {
+.ticket .tk .tkrow .t01 {
+  position: relative;
+}
+.ticket .tk .tkrow .t01 .tkImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+.ticket .tk .tkrow .t01 .tBody img {
   width: 100px;
   height: 25px;
+}
+.ticket .tk .tkrow .t02 {
+  position: relative;
+}
+.ticket .tk .tkrow .t02 .tkImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+.ticket .tk .tkrow .t03 {
+  position: relative;
+}
+.ticket .tk .tkrow .t03 .tkImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+.ticket .tk .tkrow .t04 {
+  position: relative;
+}
+.ticket .tk .tkrow .t04 .tkImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
 }/*# sourceMappingURL=style.css.map */
