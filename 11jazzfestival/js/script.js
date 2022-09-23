@@ -1,15 +1,15 @@
 $("#fullpage").fullpage({
-    menu:".nav",
-    anchors:["home","lineup","ticket","program","notice"],
-    navigation:true,
-    navigationPosition:"fp-left",
-    navigationTooltips:["home","lineup","ticket","program","notice"],
-    responsiveWidth:900
+  menu: ".nav",
+  anchors: ["home", "lineup", "ticket", "program", "notice"],
+  navigation: true,
+  navigationPosition: "fp-left",
+  navigationTooltips: ["home", "lineup", "ticket", "program", "notice"],
+  responsiveWidth: 900
 
 });
 
 
-$(document).ready(function() {
+$(document).ready(function () {
   $('.owl-carousel').owlCarousel({
     items: 4,
     loop: false,
@@ -22,14 +22,28 @@ $(document).ready(function() {
   });
 })
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-  $(".tSec").mouseenter(function(){
+  $(".tSec").mouseenter(function () {
     $(".tBody").hide()
     $(this).find(".tBody").stop().slideDown();
   });
-  $(".tSec").mouseleave(function(){
+  $(".tSec").mouseleave(function () {
     $(this).find(".tBody").stop().hide();
 
   });
 })
+
+//program slide
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
+});
