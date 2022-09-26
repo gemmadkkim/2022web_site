@@ -48,15 +48,15 @@ var swiper01 = new Swiper('.swiper01', {
 });
 
 var swiper02 = new Swiper('.swiper02', {
-  loop: true,
-  slidesPerView: 4,
-  spaceBetween: 21,
-  autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-      reverseDirection: true
-  },
-  speed: 30000
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 21,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+                reverseDirection: true
+            },
+            speed: 30000
 });
 
 
