@@ -21,6 +21,7 @@ $("#fullpage").fullpage({
 //   });
 // })
 
+// ticket 
 $(document).ready(function () {
 
   $(".tSec").mouseenter(function () {

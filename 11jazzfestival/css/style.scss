@@ -143,7 +143,6 @@ $bcolor02:#0f0f0f;
         top: 50%;left: 50%;
         transform: translate(-50%,-50%);
         #players{
-          
             overflow: hidden;
             .swiper-wrapper{
                 .swiper-slide{
@@ -161,15 +160,19 @@ $bcolor02:#0f0f0f;
 
 
 //page-ticket
-.tk.tkrow.tSec:hover{}
+
 .ticket{
     position: relative;
-    .hTop{
 
-    }
     .tk{
         width: 100%;height: 100vh;
         margin: 0 auto;
+        .mrow{
+            display: none;
+            .btn{
+                background: $bcolor01;
+            }
+        }
 
         .tkrow{
             position: absolute;
@@ -314,7 +317,6 @@ $bcolor02:#0f0f0f;
         transform: translate(-50%,-50%);
         .swiper{
             width: 100%;
-            height: 90vh;
             .swiper-wrapper{
                 .swiper-slide{
                     color: #fff;
@@ -343,6 +345,10 @@ $bcolor02:#0f0f0f;
 
 
 
+@media (max-width: 767px) {
+    #fullpage .ticket .tk .tkrow{display: none;}
+    #fullpage .ticket .tk .mrow{display: block;}
+}
 
 
 @media (max-width: 575px) {
@@ -361,4 +367,6 @@ $bcolor02:#0f0f0f;
     #fullpage .section .hTop{
         display: block;
     }
+    #fullpage .ticket .tk .tkrow{display: none;}
+    #fullpage .ticket .tk .mrow{display: block;}
 }
