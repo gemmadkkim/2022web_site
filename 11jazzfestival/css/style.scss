@@ -33,23 +33,32 @@ $bcolor02:#0f0f0f;
         .nav{
             width: 50%;height: 100%;
             margin-left: auto;
-        }
-        ul{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;align-items: center;
-            li{
+            ul{
                 width: 100%;
-                a{
-                    display: block;
-                    line-height: 60px;
-                    font-size: 24px;
-                    text-align: right;
-                    font-weight: 500;
-                    color: $fcolor02;
-                    transition: .3s;
-                    &:hover{
-                        color:$fcolor01
+                display: flex;
+                justify-content: space-between;align-items: center;
+                li{
+                    width: 100%;
+                    :hover{
+                        color:$fcolor01;
+                    }
+                
+                    &.active a{
+                        color: #F5B72E;
+                    }
+                    a{
+                        display: block;
+                        width: 100%;
+                        line-height: 60px;
+                        font-size: 24px;
+                        text-align: right;
+                        font-weight: 500;
+                        color: $fcolor02;
+                        transition: .3s;
+                        // &:hover{
+                        //     color:$fcolor01
+                        // }
+
                     }
                 }
             }
@@ -145,12 +154,19 @@ $bcolor02:#0f0f0f;
         #players{
             overflow: hidden;
             .swiper-wrapper{
+                
                 .swiper-slide{
+                    width: 350px !important;
+                    height: 350px;
+                    overflow: hidden;
+                    border-radius: 15px;
+                    &:hover img{
+                        transform: scale(1.1);
+                    }
                     img{
                         width: 350px;height: 350px;
-                        border-radius: 8px;
                         object-fit: cover;
-                        overflow: hidden;
+                        transition: .3s;
                     }
                 }
             }

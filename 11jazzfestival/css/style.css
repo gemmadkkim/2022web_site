@@ -30,26 +30,30 @@
   height: 100%;
   margin-left: auto;
 }
-#menu .navWrap ul {
+#menu .navWrap .nav ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#menu .navWrap ul li {
+#menu .navWrap .nav ul li {
   width: 100%;
 }
-#menu .navWrap ul li a {
+#menu .navWrap .nav ul li :hover {
+  color: #333;
+}
+#menu .navWrap .nav ul li.active a {
+  color: #F5B72E;
+}
+#menu .navWrap .nav ul li a {
   display: block;
+  width: 100%;
   line-height: 60px;
   font-size: 24px;
   text-align: right;
   font-weight: 500;
   color: #FFF8DE;
   transition: 0.3s;
-}
-#menu .navWrap ul li a:hover {
-  color: #333;
 }
 
 #fullpage .section {
@@ -172,13 +176,21 @@
 .lineup .pList #players {
   overflow: hidden;
 }
+.lineup .pList #players .swiper-wrapper .swiper-slide {
+  width: 350px !important;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.lineup .pList #players .swiper-wrapper .swiper-slide:hover img {
+  transform: scale(1.1);
+}
 .lineup .pList #players .swiper-wrapper .swiper-slide img {
   width: 350px;
   height: 350px;
-  border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
-  overflow: hidden;
+  transition: 0.3s;
 }
 
 .ticket {

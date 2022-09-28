@@ -21,6 +21,8 @@ $("#fullpage").fullpage({
 //   });
 // })
 
+
+
 // ticket 
 $(document).ready(function () {
 
@@ -39,7 +41,7 @@ $(document).ready(function () {
 var swiper01 = new Swiper('.swiper01', {
             loop: true,
             slidesPerView: 4,
-            spaceBetween: 21,
+            spaceBetween: 40,
             autoplay: {
                 delay: 1000,
                 disableOnInteraction: false,
@@ -50,7 +52,7 @@ var swiper01 = new Swiper('.swiper01', {
 var swiper02 = new Swiper('.swiper02', {
             loop: true,
             slidesPerView: 4,
-            spaceBetween: 21,
+            spaceBetween: 40,
             autoplay: {
                 delay: 1000,
                 disableOnInteraction: false,
