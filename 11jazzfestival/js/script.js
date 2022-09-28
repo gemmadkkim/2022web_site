@@ -8,21 +8,6 @@ $("#fullpage").fullpage({
 });
 
 
-// $(document).ready(function () {
-//   $('.owl-carousel').owlCarousel({
-//     items: 4,
-//     loop: false,
-//     center: true,
-//     margin: 10,
-//     callbacks: true,
-//     URLhashListener: true,
-//     autoplayHoverPause: true,
-//     startPosition: 'URLHash'
-//   });
-// })
-
-
-
 // ticket 
 $(document).ready(function () {
 
@@ -38,6 +23,7 @@ $(document).ready(function () {
 
 
 // lineup 
+
 var swiper01 = new Swiper('.swiper01', {
             loop: true,
             slidesPerView: 4,
