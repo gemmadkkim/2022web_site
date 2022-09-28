@@ -56,6 +56,10 @@
   background: #0f0f0f;
 }
 
+#fullpage .section .hTop {
+  display: none;
+}
+
 .home {
   width: 100%;
   height: 100%;
@@ -158,23 +162,38 @@
   height: 100vh;
 }
 .lineup .pList {
-  height: 100%;
+  width: 100%;
+  height: 750px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lineup .pList #players {
+  overflow: hidden;
 }
 .lineup .pList #players .swiper-wrapper .swiper-slide img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
 }
 
+.ticket {
+  position: relative;
+}
 .ticket .tk {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
 }
 .ticket .tk .tkrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 80%;
   border-top: 2px solid #333;
@@ -296,9 +315,20 @@
   z-index: 99;
 }
 
+.program {
+  position: relative;
+}
+.program .prg {
+  width: 100%;
+  height: 89%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .program .prg .swiper {
   width: 100%;
-  height: 90%;
+  height: 90vh;
 }
 .program .prg .swiper .swiper-wrapper .swiper-slide {
   color: #fff;
@@ -333,5 +363,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+  }
+  #fullpage .section .hTop {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

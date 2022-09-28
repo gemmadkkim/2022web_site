@@ -7,6 +7,8 @@ $bcolor01:#F5B72E;
 $bcolor02:#0f0f0f;
 
 
+
+
 //menu
 #menu{
     width: 100%;height: 60px;
@@ -58,6 +60,11 @@ $bcolor02:#0f0f0f;
 //page_home
 #fullpage{}
 #fullpage .section{background: $bcolor02;}
+#fullpage .section .hTop{
+    display: none;
+}
+
+
 .home{
     width: 100%; height: 100%;
     overflow: hidden;
@@ -130,15 +137,18 @@ $bcolor02:#0f0f0f;
 .lineup{
     position: relative;
     height: 100vh;
-
     .pList{
-        height: 100%;
+        width: 100%;height: 750px;    
+        position: absolute;
+        top: 50%;left: 50%;
+        transform: translate(-50%,-50%);
         #players{
-
+          
+            overflow: hidden;
             .swiper-wrapper{
                 .swiper-slide{
                     img{
-                        width: 400px;height: 400px;
+                        width: 350px;height: 350px;
                         border-radius: 8px;
                         object-fit: cover;
                         overflow: hidden;
@@ -151,15 +161,20 @@ $bcolor02:#0f0f0f;
 
 
 //page-ticket
-
+.tk.tkrow.tSec:hover{}
 .ticket{
+    position: relative;
     .hTop{
 
     }
     .tk{
         width: 100%;height: 100vh;
         margin: 0 auto;
+
         .tkrow{
+            position: absolute;
+            top: 50%;left: 50%;
+            transform: translate(-50%,-50%);
             width: 100%;height: 80%;
             border-top: 2px solid #333;
             border-bottom: 2px solid #333;
@@ -291,10 +306,15 @@ $bcolor02:#0f0f0f;
 }
 
 .program{
+    position: relative;
     .prg{
+        width: 100%;height: 89%;
+        position: absolute;
+        top: 50%;left: 50%;
+        transform: translate(-50%,-50%);
         .swiper{
             width: 100%;
-            height: 90%;
+            height: 90vh;
             .swiper-wrapper{
                 .swiper-slide{
                     color: #fff;
@@ -337,5 +357,8 @@ $bcolor02:#0f0f0f;
         background-size: cover;
         overflow: hidden;
 
+    }
+    #fullpage .section .hTop{
+        display: block;
     }
 }
