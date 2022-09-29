@@ -67,11 +67,126 @@
                 <h1 class="">LINEUP</h1>
                 <span class="ts-5">라인업</span>
             </div>
-            <div id="app">
-                <div class="pList">
-                    <li v-for="">
-
-                    </li>
+            <div class="pList">
+                <div class="swiper01" id="players">
+                    <div class="swiper-wrapper mb-5">
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/horn.png" alt="">
+                            <div class="txtBox text-white">
+                                <h5>재즈미어 혼</h5>
+                                <p>Jazzmeia Horn</p>  
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/agatha.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/arco.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/avishai.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/barencia.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/berlinpeople.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/blackdesert.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/bohemian.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/boobop.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/daniel_trio.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/daniel.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/deepmind01.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/eabs.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/ester.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/eureka.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/fivepoints.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/haein.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/player_pic/hans.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper02" id="players">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/hardpiano.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/jimin.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/joana.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/joeytrio.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/jon.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/kim.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/leesong.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/manuel.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/nduduzo.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/pianoforte.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/seum.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/shalosh.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/sjband.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/sketchbook.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/sumin.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/sumrra.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/wtos.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/player_pic/yong.png" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -384,23 +499,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"
         integrity="sha512-dPYTaB+Ip4gAl9vo6U0jSmI8v1AZKjPKH367mfo7pR5gLf1IKpjm3bIXIwm+MmYWEf0eiBEWSBqE+MdKUx0jfg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://unpkg.com/vue@next"></script>
     <script src="js/script.js"></script>
-
-    <script type="module">
-        import { pList01 } from "./js/data.js"
-
-        const myPlist = {
-            data(){
-                return {
-                    pList01:pList01,
-                }
-            }
-        }
-        Vue.createApp(myPlist).mount("#app")
-    </script>
-
-
 </body>
 
 </html>

@@ -1,12 +1,45 @@
-const mydata = [
+const pList01 = [
     {
-        en:"Joey Alexander Trio ",
-        kn:"조이 알렉산더 트리오",
-        img:""
+        index:1,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
     },
     {
-        en:"Joey Alexander Trio ",
-        kn:"조이 알렉산더 트리오",
-        img:""
+        index:2,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
     },
+    {
+        index:3,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:4,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:5,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:6,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:7,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+  
 ]
