@@ -22,35 +22,6 @@ $(document).ready(function () {
 })
 
 
-// lineup 
-
-// var swiper01 = new Swiper('.swiper01', {
-//             loop: true,
-//             slidesPerView: 4,
-//             spaceBetween: 40,
-//             autoplay: {
-//                 delay: 1000,
-//                 disableOnInteraction: false,
-//             },
-//             speed: 30000
-// });
-
-// var swiper02 = new Swiper('.swiper02', {
-//             loop: true,
-//             slidesPerView: 4,
-//             spaceBetween: 40,
-//             autoplay: {
-//                 delay: 1000,
-//                 disableOnInteraction: false,
-//                 reverseDirection: true
-//             },
-//             speed: 30000
-// });
-
-
-//lineup #2
-
-
 
 //program slide
 var swiper = new Swiper(".mySwiper", {

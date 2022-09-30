@@ -1,4 +1,4 @@
-const pList01 = [
+const pList01= [
     {
         index:1,
         ko:"아가타",
@@ -43,3 +43,95 @@ const pList01 = [
     },
   
 ]
+const pList02 = [
+    {
+        index:1,
+        ko:"아르코",
+        en:"Arco",
+        img:"arco.png"
+    },
+    {
+        index:2,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:3,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:4,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:5,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:6,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:7,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+  
+]
+const pList03 = [
+    {
+        index:1,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:2,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:3,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:4,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:5,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:6,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+    {
+        index:7,
+        ko:"아가타",
+        en:"AGATHA",
+        img:"agatha.jpg"
+    },
+  
+]
+
+export { pList01, pList02, pList03 }; 

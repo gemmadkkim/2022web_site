@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The 19th Jarasum Jazz Festival</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
         integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css"
         integrity="sha512-+i36IwpzfYLmCNRFtEnpEAie8PEyhO5GuK7W2Y0eDMVwT1pesCB86xuQlc5v1lfb69N/6hejJEW3EWeVkExTlQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.fullPage.js"></script>
     <script src="js/data.js"></script>
@@ -63,22 +64,56 @@
 
         </div>
         <div class="section lineup" data-anchor="lineup">
-            <div class="hTop text-white pt-5 ms-3">
+            <div class="hTop text-white pt-5 ms-3 d-flex d-md-none gap-2">
                 <h1 class="">LINEUP</h1>
-                <span class="ts-5">라인업</span>
+                <span class="ts-5 mt-2">라인업</span>
             </div>
-            <div id="app">
+            <div id="app" class="">
                 <div class="pList">
-                    <li v-for="">
+                    <div class="tabWrap ">
+                        <ul class="tab ">
+                            <li v-bind:class="{active:tab==1}" @click="tab=1">시월일일<span>10/01</span></li>
+                            <li v-bind:class="{active:tab==2}" @click="tab=2">시월이일<span>10/02</span></li>
+                            <li v-bind:class="{active:tab==3}" @click="tab=3">시월삼일<span>10/03</span></li>
+                        </ul>
+                    </div>
+                    <div class="swiper listSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide item" v-for="(item,i) in pList01" v-if="tab == 1">
+                                <div class="pPhoto"
+                                    v-bind:style="{'background-image':`url(images/player_pic/${item.img})`}"></div>
+                                <div class="pName">
+                                    <h4>{{item.ko}}</h4>
+                                    <p>{{item.en}}</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item" v-for="(item,i) in pList02" v-if="tab == 2">
+                                <div class="pPhoto"
+                                    v-bind:style="{'background-image':`url(images/player_pic/${item.img}`}"></div>
+                                <div class="pName">
+                                    <h4>{{item.ko}}</h4>
+                                    <p>{{item.en}}</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide item" v-for="(item,i) in pList03" v-if="tab == 3">
+                                <div class="pPhoto"
+                                    v-bind:style="{'background-image':`url(images/player_pic/${item.img}`}"></div>
+                                <div class="pName">
+                                    <h4>{{item.ko}}</h4>
+                                    <p>{{item.en}}</p>
+                                </div>
+                            </div>
 
-                    </li>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
         <div class="section ticket">
-            <div class="hTop text-white pt-5 ms-3">
+            <div class="hTop text-white pt-5 ms-3 d-flex d-md-none gap-2">
                 <h1 class="">TICKET</h1>
-                <span class="ts-5">티켓</span>
+                <span class="ts-5 mt-2">티켓</span>
             </div>
             <div class="tk">
                 <div class="row mrow px-5">
@@ -310,9 +345,9 @@
             </div>
         </div>
         <div class="section program" data-anchor="program">
-            <div class="hTop text-white pt-5 ms-3">
+            <div class="hTop text-white pt-5 ms-3 d-flex d-md-none gap-2">
                 <h1 class="">PROGRAM</h1>
-                <span class="ts-5">프로그램</span>
+                <span class="ts-5 mt-2">프로그램</span>
             </div>
             <div class="prg">
                 <!-- slide -->
@@ -335,9 +370,11 @@
                                 <div class="imgBox"><img src="images/program0202.png" alt=""></div>
                                 <div class="txtBox">
                                     <img src="images/txts.png" alt="">
-                                    <h3>SPAIN FOCUS</h3>
-                                    <span>스페인 포커스</span>
-                                    <p>2010년부터 이어온 자라섬재즈페스티벌의 시그니쳐 국제교류 프로그램 '포커스 국가'의 2022년 주빈국은 스페인이다.
+                                    <h3>JARASUM BEYOND</h3>
+                                    <span>자라섬비욘드</span>
+                                    <p><자라섬비욘드>는 자라섬재즈페스티벌의 대표적인 브랜드 공연으로, 
+
+                                        매년 새로운 방향과 아티스트 라인업으로 페스티벌 무대에서 첫선을 보이고 있다.
                                     </p>
                                 </div>
                             </div>
@@ -347,9 +384,9 @@
                                 <div class="imgBox"><img src="images/program0303.png" alt=""></div>
                                 <div class="txtBox">
                                     <img src="images/txts.png" alt="">
-                                    <h3>SPAIN FOCUS</h3>
-                                    <span>스페인 포커스</span>
-                                    <p>2010년부터 이어온 자라섬재즈페스티벌의 시그니쳐 국제교류 프로그램 '포커스 국가'의 2022년 주빈국은 스페인이다.
+                                    <h3>JARASUM JAZZ UNIVERSE</h3>
+                                    <span>자라섬재즈유니버스</span>
+                                    <p>매년 문화예술계의 흐름에 맞는 콘텐츠 기획으로 주목받고 있는 자라섬재즈는  올해 자라섬재즈 만의 메타버스를 선보인다.
                                     </p>
                                 </div>
                             </div>
@@ -361,9 +398,9 @@
             </div>
         </div>
         <div class="section notice pt-5" data-anchor="notice">
-            <div class="hTop text-white pt-5 ms-3">
+            <div class="hTop text-white pt-5 ms-3 d-flex d-md-none gap-2">
                 <h1 class="">NOTICE</h1>
-                <span class="ts-5">공지사항</span>
+                <span class="ts-5 mt-2">공지사항</span>
             </div>
             <div class="ntc">
 
@@ -384,20 +421,44 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"
         integrity="sha512-dPYTaB+Ip4gAl9vo6U0jSmI8v1AZKjPKH367mfo7pR5gLf1IKpjm3bIXIwm+MmYWEf0eiBEWSBqE+MdKUx0jfg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/vue@next"></script>
     <script src="js/script.js"></script>
 
     <script type="module">
-        import { pList01 } from "./js/data.js"
-
-        const myPlist = {
-            data(){
+        import { pList01, pList02, pList03 } from "./js/data.js"
+        const webApp = {
+            data() {
                 return {
-                    pList01:pList01,
+                    tab: 1,
+                    pList01: pList01,
+                    pList02: pList02,
+                    pList03: pList03
                 }
             }
         }
-        Vue.createApp(myPlist).mount("#app")
+
+        Vue.createApp(webApp).mount("#app")
+
+        var swiper = new Swiper(".listSwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 40,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            observer: true,
+            observeParents: true,
+        });
     </script>
 
 
