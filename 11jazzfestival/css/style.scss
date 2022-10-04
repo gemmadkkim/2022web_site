@@ -81,8 +81,6 @@ $bcolor02: #0f0f0f;
 }
 
 //page_home
-#fullpage {}
-
 #fullpage .section {
     background: $bcolor02;
 }
@@ -181,9 +179,6 @@ $bcolor02: #0f0f0f;
 
 
 
-
-
-
 //page_lineup
 .lineup {
     position: relative;
@@ -197,44 +192,6 @@ $bcolor02: #0f0f0f;
         left: 50%;
         transform: translate(-50%, -50%);
 
-        // #players{
-        //     overflow: hidden;
-        //     .swiper-wrapper{
-        //         .swiper-slide{
-        //             position: relative;
-        //             width: 350px !important;
-        //             height: 350px;
-        //             overflow: hidden;
-        //             border-radius: 15px;
-        //             &:hover .pName{
-        //                 display: block;
-        //             }
-        //             &:hover img{
-        //                 transform: scale(1.1);
-        //             }
-        //             img{
-        //                 width: 350px;height: 350px;
-        //                 object-fit: cover;
-        //                 transition: .3s;
-        //             }
-        //             .pName{
-        //                 background: rgba(0,0,0,.4);
-        //                 position: absolute;
-        //                 top: 0;left: 0;
-        //                 width: 350px;height: 350px;
-        //                 display: none;
-        //                 .txtBox{
-        //                     display: flex;
-        //                     justify-content: center;align-items: center;
-        //                     flex-direction: column;
-        //                     position: absolute;
-        //                     top: 70%;left: 50%;
-        //                     transform: translateX(-50%);                          
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
         .tabWrap {
             .tab{
                 display: flex;
@@ -491,9 +448,8 @@ $bcolor02: #0f0f0f;
     }
 }
 
-.program {
+.program{
     position: relative;
-
     .prg {
         width: 100%;
         height: 89%;
@@ -508,24 +464,23 @@ $bcolor02: #0f0f0f;
             .swiper-wrapper {
                 .swiper-slide {
                     color: #fff;
-
+                    &:first-child{
+                        .mImg{display: none;}
+                    }
                     .slideItem {
                         position: relative;
-
                         .imgBox {
                             width: 100%;
                             height: 100%;
                             object-fit: contain;
-
-                            img {}
                         }
-
                         .txtBox {
                             width: 50%;
                             height: 50%;
                             position: absolute;
                             top: 300px;
                             right: 0;
+                            padding: 0 50px;
                         }
                     }
                 }
@@ -533,8 +488,6 @@ $bcolor02: #0f0f0f;
         }
     }
 }
-
-
 
 
 
@@ -577,4 +530,55 @@ $bcolor02: #0f0f0f;
     #fullpage .ticket .tk .mrow {
         display: block;
     }
+
+    // program
+
+    .program .prg .swiper .swiper-wrapper .swiper-slide{
+
+        &:first-child{
+            .imgBox{
+                img{display: none;}
+            }
+            .mImg{
+                img{
+                    display: block;
+                    background: #fff;
+                   
+                }
+            }
+        }
+    }
+    .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem{
+        margin-top: 50px;
+        width: 100%;
+        height: 500px;
+    }
+    .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .mImg,
+    .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .imgBox {
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        top:0; 
+        left: 0;
+        img{
+            width: 100%;height: 100%;
+            object-fit: cover;
+        }
+    }
+
+
+      .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .txtBox {
+        width: 90%;
+        height: 200px;
+        position: absolute;
+        top: 300px;
+        left: 25px;
+        padding: 0;
+        p{
+            font-size: 14px;
+        }
+
+      }
+
+
 }
