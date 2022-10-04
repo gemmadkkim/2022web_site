@@ -531,13 +531,13 @@ $bcolor02: #0f0f0f;
                 text-indent: 20px;
                 line-height: 40px;
                 border-top: 1px solid #ccc;
-                background: pink;
             }
         }
     }
     .guide {
         width: 100%;height: 40%;
         position: relative;
+        margin-bottom: 50px;
 
         .iBox {
             display: flex;
