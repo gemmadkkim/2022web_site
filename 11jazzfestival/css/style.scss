@@ -193,23 +193,28 @@ $bcolor02: #0f0f0f;
         transform: translate(-50%, -50%);
 
         .tabWrap {
-            .tab{
+            .tab {
                 display: flex;
                 margin-left: auto;
             }
+
             li {
                 width: 200px;
                 height: 40px;
                 color: #fff;
                 cursor: pointer;
                 margin-right: 20px;
-                display: flex;justify-content: center;align-items: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border-radius: 20px;
-                span{
+
+                span {
                     margin-left: 10px;
                 }
             }
-            li.active{
+
+            li.active {
                 background: $bcolor01;
                 color: $fcolor01;
                 font-weight: bold;
@@ -225,9 +230,10 @@ $bcolor02: #0f0f0f;
             // background: pink;
 
 
-            .swiper-wrapper{
+            .swiper-wrapper {
                 margin-top: 50px;
             }
+
             .swiper-slide {
                 width: 550px !important;
                 height: 700px;
@@ -236,6 +242,7 @@ $bcolor02: #0f0f0f;
                 justify-content: center;
                 align-items: center;
                 margin: 0 30px;
+
                 .pPhoto {
                     width: 550px;
                     height: 550px;
@@ -245,12 +252,16 @@ $bcolor02: #0f0f0f;
                     margin-bottom: 20px;
 
                 }
+
                 .pName {
                     color: #fff;
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;align-items: center;
+                    justify-content: center;
+                    align-items: center;
+
                     h4 {}
+
                     p {}
                 }
             }
@@ -448,8 +459,9 @@ $bcolor02: #0f0f0f;
     }
 }
 
-.program{
+.program {
     position: relative;
+
     .prg {
         width: 100%;
         height: 89%;
@@ -464,16 +476,22 @@ $bcolor02: #0f0f0f;
             .swiper-wrapper {
                 .swiper-slide {
                     color: #fff;
-                    &:first-child{
-                        .mImg{display: none;}
+
+                    &:first-child {
+                        .mImg {
+                            display: none;
+                        }
                     }
+
                     .slideItem {
                         position: relative;
+
                         .imgBox {
                             width: 100%;
                             height: 100%;
                             object-fit: contain;
                         }
+
                         .txtBox {
                             width: 50%;
                             height: 50%;
@@ -488,6 +506,64 @@ $bcolor02: #0f0f0f;
         }
     }
 }
+
+.notice {
+    position: relative;
+
+    .ntcBox {
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    .ntc{
+        width: 90%;
+        margin-left: 80px;
+
+        a{
+            width: 100%;
+            p{
+                color: #fff;
+                font-size: 18px;
+                text-indent: 20px;
+                line-height: 40px;
+                border-top: 1px solid #ccc;
+                background: pink;
+            }
+        }
+    }
+    .guide {
+        width: 100%;height: 40%;
+        position: relative;
+
+        .iBox {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+                .nIcon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    img {
+                        width: 150px;
+                        height: 230px;
+                        object-fit: contain;
+                    }
+                }
+
+        }
+
+    }
+}
+
+
+
+
 
 
 
@@ -533,52 +609,59 @@ $bcolor02: #0f0f0f;
 
     // program
 
-    .program .prg .swiper .swiper-wrapper .swiper-slide{
+    .program .prg .swiper .swiper-wrapper .swiper-slide {
 
-        &:first-child{
-            .imgBox{
-                img{display: none;}
+        &:first-child {
+            .imgBox {
+                img {
+                    display: none;
+                }
             }
-            .mImg{
-                img{
+
+            .mImg {
+                img {
                     display: block;
                     background: #fff;
-                   
+
                 }
             }
         }
     }
-    .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem{
+
+    .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem {
         margin-top: 50px;
         width: 100%;
         height: 500px;
     }
+
     .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .mImg,
     .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .imgBox {
         width: 100%;
         height: 250px;
         position: absolute;
-        top:0; 
+        top: 0;
         left: 0;
-        img{
-            width: 100%;height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
         }
     }
 
-
-      .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .txtBox {
+    .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .txtBox {
         width: 90%;
         height: 200px;
         position: absolute;
         top: 300px;
         left: 25px;
         padding: 0;
-        p{
+
+        p {
             font-size: 14px;
         }
 
-      }
+    }
 
 
 }
