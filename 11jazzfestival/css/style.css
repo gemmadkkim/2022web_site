@@ -471,6 +471,57 @@
      object-fit: contain;
 }
 
+.footer {
+  width: 100%;
+  height: 100%;
+  background: #F5B72E !important;
+  color: #FFF8DE;
+  position: relative;
+}
+.footer .ftWrap {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+.footer .ftGuide .ftIcons {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .ftGuide .ftIcons .ftLogo {
+  width: 200px;
+  height: 140px;
+  margin-bottom: 20px;
+}
+.footer .ftGuide .ftIcons .ftLogo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+.footer .ftGuide .ftIcons .sns {
+  width: 200px;
+}
+.footer .ftGuide .ftIcons .sns .icons {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer .ftGuide .ftIcons .sns .icons img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer .ftGuide .contact {
+  padding-top: 20px;
+}
+.footer .ftGuide .contact .conWrap .row {
+  border-bottom: 1px solid #FFF8DE;
+}
+
 @media (max-width: 767px) {
   #fullpage .ticket .tk .tkrow {
     display: none;

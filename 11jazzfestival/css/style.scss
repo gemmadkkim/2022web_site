@@ -576,6 +576,57 @@ $bcolor02: #0f0f0f;
 
 }
 
+//footer
+.footer{
+    width: 100%;
+    height: 100%;   
+    background:$bcolor01 !important;
+    color: $fcolor02;
+    position: relative;
+    .ftWrap{
+        position: absolute;
+        bottom: 0;left: 5%;
+    }
+    .ftGuide{
+
+        .ftIcons{
+            height: 240px;
+            display: flex;flex-direction:column;
+            .ftLogo{
+                width: 200px;height: 140px;
+                margin-bottom: 20px;
+                img{
+                    width: 100%;height: 100%;
+                    object-fit: contain;
+                    display: block;
+                }
+            }
+            .sns{
+                width: 200px;
+                .icons{
+                    height: 100%;
+                    display: flex;justify-content: space-around;align-items: center;
+                    img{
+                        width: 40px;height: 40px;
+                        object-fit: contain;
+        
+                    }
+                }
+            }
+        }
+        .contact{
+            padding-top: 20px;
+            .conWrap{
+
+                .row{
+                    border-bottom: 1px solid #FFF8DE;
+                }
+            }
+        }
+    }
+
+}
+
 
 
 
