@@ -2,6 +2,7 @@
 $fcolor01: #333;
 $fcolor02: #FFF8DE;
 $fcolor03: #fff;
+$fcolor04: #F5B72E;
 
 $bcolor01: #F5B72E;
 $bcolor02: #0f0f0f;
@@ -57,7 +58,7 @@ $bcolor02: #0f0f0f;
                     }
 
                     &.active a {
-                        color: #F5B72E;
+                        color: $fcolor04;
                     }
 
                     a {
@@ -459,6 +460,7 @@ $bcolor02: #0f0f0f;
     }
 }
 
+//program
 .program {
     position: relative;
 
@@ -507,6 +509,8 @@ $bcolor02: #0f0f0f;
     }
 }
 
+
+//notice
 .notice {
     position: relative;
 
@@ -521,20 +525,32 @@ $bcolor02: #0f0f0f;
     }
     .ntc{
         width: 90%;
-        margin-left: 80px;
+        height: 100%;
+        margin-left: 5%;
 
         a{
             width: 100%;
+            height: 55px;
+            display: block;
+            border-bottom: 1px solid #ccc;
+            &:first-child{
+                border-top: 1px solid #ccc;
+            }
+            &:hover p{
+                color:$fcolor04;
+            }
             p{
                 color: #fff;
                 font-size: 18px;
-                text-indent: 20px;
-                line-height: 40px;
-                border-top: 1px solid #ccc;
+                text-indent: 40px;
+                line-height: 55px;
+          
+            }
+            
             }
         }
     }
-    .guide {
+    .ntcWrap {
         width: 100%;height: 40%;
         position: relative;
         margin-bottom: 50px;
@@ -557,7 +573,7 @@ $bcolor02: #0f0f0f;
 
         }
 
-    }
+
 }
 
 
@@ -605,8 +621,6 @@ $bcolor02: #0f0f0f;
     #fullpage .ticket .tk .mrow {
         display: block;
     }
-
-    // program
 
     .program .prg .swiper .swiper-wrapper .swiper-slide {
 
@@ -661,6 +675,21 @@ $bcolor02: #0f0f0f;
         }
 
     }
+    .ntcBox{
 
-
+        .ntc {
+            width: 100%;
+            a{
+                width: 90%;
+                p{
+                    width: 90%;
+                    font-size: 14px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+    
 }
