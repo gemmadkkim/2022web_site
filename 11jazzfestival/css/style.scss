@@ -492,6 +492,9 @@ $bcolor02: #0f0f0f;
                             width: 100%;
                             height: 100%;
                             object-fit: contain;
+                            .mImg{
+                                display: none;
+                            }
                         }
 
                         .txtBox {
@@ -585,7 +588,7 @@ $bcolor02: #0f0f0f;
     position: relative;
     .ftWrap{
         position: absolute;
-        bottom: 0;left: 5%;
+        bottom: 20px;left: 5%;
     }
     .ftGuide{
 
@@ -698,19 +701,23 @@ $bcolor02: #0f0f0f;
         height: 500px;
     }
 
-    .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .mImg,
     .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .imgBox {
         width: 100%;
         height: 250px;
         position: absolute;
         top: 0;
         left: 0;
-
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
+    }
+    .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .imgBox .pImg {
+        display: none;
+    }
+    .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .imgBox .mImg {
+        display: block;
     }
 
     .program .prg .swiper .swiper-wrapper .swiper-slide .slideItem .txtBox {
