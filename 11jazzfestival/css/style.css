@@ -522,6 +522,7 @@
   padding-top: 20px;
 }
 .footer .ftGuide .contact .conWrap .row {
+  height: 100%;
   border-bottom: 1px solid #FFF8DE;
 }
 
@@ -610,5 +611,8 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+  }
+  .footer .contact .conWrap .row p {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

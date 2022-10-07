@@ -622,6 +622,7 @@ $bcolor02: #0f0f0f;
             .conWrap{
 
                 .row{
+                    height: 100%;
                     border-bottom: 1px solid #FFF8DE;
                 }
             }
@@ -749,5 +750,13 @@ $bcolor02: #0f0f0f;
             }
         }
     }
-    
+    .footer{
+        .contact{
+            .conWrap{
+                .row{
+                    p{font-size: 14px;}
+                }
+            }
+        }
+    }
 }
